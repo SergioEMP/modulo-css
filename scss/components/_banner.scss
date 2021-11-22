@@ -1,0 +1,17 @@
+.banner{
+    background: color(complementary,three); 
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title-page{
+            display: none;
+        }
+        img{
+            display: none;
+        }
+    }
+
+}
+ 

@@ -1,0 +1,22 @@
+.cities{
+    background:color(primary,base);
+
+    .container{
+
+        .title-section{
+            color: color(grayscale,white);
+        }
+        .cities__galeria{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            picture {
+                max-width: 100%;
+                width: auto;
+            }
+         
+        }
+       
+    }
+}

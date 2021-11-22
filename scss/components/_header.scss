@@ -1,0 +1,34 @@
+.header{
+    align-content: center;
+    background-color: color(primary,dark);
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+    .menu{
+        .navbar{
+            display: none;
+        }
+    }
+    .bar{
+        align-items: center;
+        display: flex;
+        font-size: 3rem;
+        justify-content: space-between;
+        width: 100%;
+        img{
+            margin-left: 1rem;
+            width: 3rem;
+            height: 4rem;
+        }
+        .bar__icon{
+            font-size: 5rem; 
+        }
+        .title-header{
+            font-family: $font-header;
+            color: color(grayscale, white);
+        }
+
+    }
+}

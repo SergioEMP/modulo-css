@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'iconFont';
+  src:  url('./iconFont.eot?esom0w');
+  src:  url('./iconFont.eot?esom0w#iefix') format('embedded-opentype'),
+    url('./iconFont.ttf?esom0w') format('truetype'),
+    url('./iconFont.woff?esom0w') format('woff'),
+    url('./iconFont.svg?esom0w#icomoon') format('svg');
+  font-weight: normal;  
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconFont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chat:before {
+  content: "\e900";
+}
+.icon-email:before {
+  content: "\e901";
+}
+.icon-home:before {
+  content: "\e902";
+}
+.icon-shop:before {
+  content: "\e903";
+}
+.icon-swift:before {
+  content: "\e904";
+}
+.icon-user:before {
+  content: "\e905";
+}

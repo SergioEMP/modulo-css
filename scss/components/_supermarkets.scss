@@ -1,0 +1,24 @@
+.supermarkets{
+    background: color(primary,base);
+    .container{
+        color: color(grayscale,white);
+        font-family: $font-secondary;
+        font-size: 22px;
+
+        .title-section{
+            color: color(grayscale,white);
+        }
+        picture{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .supermarkets__topinfo{
+            margin-top: 20px;
+        }
+        .btn-link{
+            color: color(grayscale,white);
+            font-size: 16px;
+            }
+    }
+}

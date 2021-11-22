@@ -1,0 +1,1329 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+/* line 6, ../scss/config/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, ../scss/config/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+/* line 31, ../scss/config/_reset.scss */
+*[hidden] {
+  display: none;
+}
+
+/* line 34, ../scss/config/_reset.scss */
+body {
+  line-height: 1.5;
+}
+
+/* line 37, ../scss/config/_reset.scss */
+menu, ol, ul {
+  list-style: none;
+}
+
+/* line 40, ../scss/config/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, ../scss/config/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, ../scss/config/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 53, ../scss/config/_reset.scss */
+hr {
+  border-top: 1px solid #f2f2f2;
+}
+
+@font-face {
+  font-family: 'iconFont';
+  src: url("./../fonts/iconFonts/iconFont.eot?esom0w");
+  src: url("./../fonts/iconFonts/iconFont.eot?esom0w#iefix") format("embedded-opentype"), url("./../fonts/iconFonts/iconFont.ttf?esom0w") format("truetype"), url("./../fonts/iconFonts/iconFont.woff?esom0w") format("woff"), url("./../fonts/iconFonts/iconFont.svg?esom0w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Russo One';
+  src: url("./../fonts/RussoOne/RussoOne-Regular.woff2") format("woff2"), url("./../fonts/RussoOne/RussoOne-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rufina';
+  src: url("./../fonts/Rufina/Rufina-Regular.woff2") format("woff2"), url("./../fonts/Rufina/Rufina-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rufina';
+  src: url("./../fonts/Rufina/Rufina-Bold.woff2") format("woff2"), url("./../fonts/Rufina/Rufina-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Redressed';
+  src: url("./../fonts/Redressed/Redressed-Regular.woff2") format("woff2"), url("./../fonts/Redressed/Redressed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* line 51, ../scss/config/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconFont' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 65, ../scss/config/_fonts.scss */
+.icon-chat:before {
+  content: "\e900";
+}
+
+/* line 68, ../scss/config/_fonts.scss */
+.icon-email:before {
+  content: "\e901";
+}
+
+/* line 71, ../scss/config/_fonts.scss */
+.icon-home:before {
+  content: "\e902";
+}
+
+/* line 74, ../scss/config/_fonts.scss */
+.icon-shop:before {
+  content: "\e903";
+}
+
+/* line 77, ../scss/config/_fonts.scss */
+.icon-swift:before {
+  content: "\e904";
+}
+
+/* line 80, ../scss/config/_fonts.scss */
+.icon-user:before {
+  content: "\e905";
+}
+
+/* line 2, ../scss/base/_body.scss */
+*,
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 6, ../scss/base/_body.scss */
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+/* line 11, ../scss/base/_body.scss */
+body {
+  font-family: "Russo One", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+/* line 21, ../scss/base/_body.scss */
+p {
+  margin-bottom: 1.6rem;
+}
+
+/* line 25, ../scss/base/_body.scss */
+.main-container {
+  min-height: 100vh;
+}
+
+/* line 1, ../scss/base/_links.scss */
+a, button {
+  color: #0074FC;
+  text-decoration: none;
+  outline: 0;
+  transition: color .1s ease-out;
+}
+/* line 8, ../scss/base/_links.scss */
+a.button:hover, button.button:hover {
+  text-decoration: none;
+}
+/* line 13, ../scss/base/_links.scss */
+a:hover, a:focus, button:hover, button:focus {
+  color: #0056B3;
+}
+@media (max-width: 539px) {
+  /* line 13, ../scss/base/_links.scss */
+  a:hover, a:focus, button:hover, button:focus {
+    text-decoration: none;
+  }
+}
+/* line 19, ../scss/base/_links.scss */
+a.underline-link, button.underline-link {
+  color: #0074FC;
+  cursor: pointer;
+  font-family: "Russo One", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* line 27, ../scss/base/_links.scss */
+a.text-link, button.text-link {
+  font-family: "Russo One", sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  line-height: 1;
+  outline: none;
+  background-color: transparent;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 41, ../scss/base/_links.scss */
+a.text-link.text-primary-base, button.text-link.text-primary-base {
+  color: #4469EA;
+}
+/* line 43, ../scss/base/_links.scss */
+a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
+  color: #1D1B7A;
+}
+/* line 47, ../scss/base/_links.scss */
+a.text-link.text-secondary-base, button.text-link.text-secondary-base {
+  color: #E6E8FB;
+}
+/* line 49, ../scss/base/_links.scss */
+a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hover {
+  color: #615353;
+}
+/* line 53, ../scss/base/_links.scss */
+a.text-link.text-primary-base, button.text-link.text-primary-base {
+  color: #1D1B7A;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-transform: none;
+}
+/* line 58, ../scss/base/_links.scss */
+a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
+  color: #4469EA;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-flex {
+  display: flex;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-inline-flex {
+  display: inline-flex;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-block {
+  display: block;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-inline-block {
+  display: inline-block;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-grid {
+  display: grid;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-none {
+  display: none;
+}
+
+@media (min-width: 540px) {
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-flex {
+    display: flex;
+  }
+
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-block {
+    display: block;
+  }
+
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-grid {
+    display: grid;
+  }
+
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-none {
+    display: none;
+  }
+
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-inline-block {
+    display: inline-block;
+  }
+}
+@media (min-width: 720px) {
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-flex {
+    display: flex;
+  }
+
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-block {
+    display: block;
+  }
+
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-grid {
+    display: grid;
+  }
+
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-none {
+    display: none;
+  }
+
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-inline-block {
+    display: inline-block;
+  }
+}
+@media (min-width: 960px) {
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-flex {
+    display: flex;
+  }
+
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-block {
+    display: block;
+  }
+
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-grid {
+    display: grid;
+  }
+
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-none {
+    display: none;
+  }
+
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-flex {
+    display: flex;
+  }
+
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-block {
+    display: block;
+  }
+
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-grid {
+    display: grid;
+  }
+
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-none {
+    display: none;
+  }
+
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-inline-block {
+    display: inline-block;
+  }
+}
+/* line 48, ../scss/base/_flexbox.scss */
+.fd-row {
+  display: row;
+}
+
+/* line 48, ../scss/base/_flexbox.scss */
+.fd-row-reverse {
+  display: row-reverse;
+}
+
+/* line 48, ../scss/base/_flexbox.scss */
+.fd-column {
+  display: column;
+}
+
+/* line 48, ../scss/base/_flexbox.scss */
+.fd-column-reverse {
+  display: column-reverse;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-flex-start {
+  justify-content: flex-start;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-flex-end {
+  justify-content: flex-end;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-center {
+  justify-content: center;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-space-between {
+  justify-content: space-between;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-space-around {
+  justify-content: space-around;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-space-evenly {
+  justify-content: space-evenly;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-flex-start {
+  align-items: flex-start;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-flex-end {
+  align-items: flex-end;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-center {
+  align-items: center;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-baseline {
+  align-items: baseline;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-stretch {
+  align-items: stretch;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-flex-start {
+  align-content: flex-start;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-flex-end {
+  align-content: flex-end;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-center {
+  align-content: center;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-space-between {
+  align-content: space-between;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-space-around {
+  align-content: space-around;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-stretch {
+  align-content: stretch;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-flex-start {
+  align-self: flex-start;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-flex-end {
+  align-self: flex-end;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-center {
+  align-self: center;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-baseline {
+  align-self: baseline;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-stretch {
+  align-self: stretch;
+}
+
+/* line 1, ../scss/base/_grid.scss */
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 720px) {
+  /* line 1, ../scss/base/_grid.scss */
+  .container {
+    max-width: 860px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 1, ../scss/base/_grid.scss */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* line 19, ../scss/base/_grid.scss */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+@media (max-width: 539px) {
+  /* line 19, ../scss/base/_grid.scss */
+  .grid {
+    grid-gap: 0;
+  }
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-1 {
+  grid-column: span 1;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-2 {
+  grid-column: span 2;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-3 {
+  grid-column: span 3;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-4 {
+  grid-column: span 4;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-5 {
+  grid-column: span 5;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-6 {
+  grid-column: span 6;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-7 {
+  grid-column: span 7;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-8 {
+  grid-column: span 8;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-9 {
+  grid-column: span 9;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-10 {
+  grid-column: span 10;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-11 {
+  grid-column: span 11;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-12 {
+  grid-column: span 12;
+}
+
+@media (min-width: 540px) {
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-1 {
+    grid-column: span 1;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-2 {
+    grid-column: span 2;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-3 {
+    grid-column: span 3;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-4 {
+    grid-column: span 4;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-5 {
+    grid-column: span 5;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-6 {
+    grid-column: span 6;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-7 {
+    grid-column: span 7;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-8 {
+    grid-column: span 8;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-9 {
+    grid-column: span 9;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-10 {
+    grid-column: span 10;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-11 {
+    grid-column: span 11;
+  }
+
+  /* line 36, ../scss/base/_grid.scss */
+  .grid-sm-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 720px) {
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-1 {
+    grid-column: span 1;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-2 {
+    grid-column: span 2;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-3 {
+    grid-column: span 3;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-4 {
+    grid-column: span 4;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-5 {
+    grid-column: span 5;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-6 {
+    grid-column: span 6;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-7 {
+    grid-column: span 7;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-8 {
+    grid-column: span 8;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-9 {
+    grid-column: span 9;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-10 {
+    grid-column: span 10;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-11 {
+    grid-column: span 11;
+  }
+
+  /* line 44, ../scss/base/_grid.scss */
+  .grid-md-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 960px) {
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-1 {
+    grid-column: span 1;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-2 {
+    grid-column: span 2;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-3 {
+    grid-column: span 3;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-4 {
+    grid-column: span 4;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-5 {
+    grid-column: span 5;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-6 {
+    grid-column: span 6;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-7 {
+    grid-column: span 7;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-8 {
+    grid-column: span 8;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-9 {
+    grid-column: span 9;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-10 {
+    grid-column: span 10;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-11 {
+    grid-column: span 11;
+  }
+
+  /* line 52, ../scss/base/_grid.scss */
+  .grid-lg-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-1 {
+    grid-column: span 1;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-2 {
+    grid-column: span 2;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-3 {
+    grid-column: span 3;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-4 {
+    grid-column: span 4;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-5 {
+    grid-column: span 5;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-6 {
+    grid-column: span 6;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-7 {
+    grid-column: span 7;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-8 {
+    grid-column: span 8;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-9 {
+    grid-column: span 9;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-10 {
+    grid-column: span 10;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-11 {
+    grid-column: span 11;
+  }
+
+  /* line 60, ../scss/base/_grid.scss */
+  .grid-xl-12 {
+    grid-column: span 12;
+  }
+}
+/* line 1, ../scss/base/_buttons.scss */
+.btn {
+  font-family: "Russo One", sans-serif;
+  font-size: 18px;
+  padding: 1.35rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1;
+  outline: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  width: 215px;
+  height: 50px;
+  margin: 0 a;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 720px) {
+  /* line 1, ../scss/base/_buttons.scss */
+  .btn {
+    width: auto;
+  }
+}
+/* line 21, ../scss/base/_buttons.scss */
+.btn.btn-primary {
+  background: #1D1B7A;
+  color: #ffffff;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-primary:hover {
+  background: #16155d;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-primary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(68, 105, 234, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-primary:active {
+  background: #131250;
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-primary.disabled, .btn.btn-primary:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-primary.disabled:hover, .btn.btn-primary:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-primary.disabled:focus, .btn.btn-primary:disabled:focus {
+  box-shadow: none;
+}
+/* line 23, ../scss/base/_buttons.scss */
+.btn.btn-primary.outline {
+  background: transparent;
+  color: #1D1B7A;
+  border: 0.15rem solid #1D1B7A;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover {
+  background: transparent;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(68, 105, 234, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:active {
+  background: transparent;
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline.disabled, .btn.btn-primary.outline:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline.disabled:hover, .btn.btn-primary.outline:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline.disabled:focus, .btn.btn-primary.outline:disabled:focus {
+  box-shadow: none;
+}
+/* line 26, ../scss/base/_buttons.scss */
+.btn.btn-primary.outline:hover, .btn.btn-primary.outline:active {
+  background: #1D1B7A;
+  color: #ffffff;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover:hover, .btn.btn-primary.outline:active:hover {
+  background: #16155d;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover:focus, .btn.btn-primary.outline:active:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(68, 105, 234, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover:active, .btn.btn-primary.outline:active:active {
+  background: #131250;
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover.disabled, .btn.btn-primary.outline:hover:disabled, .btn.btn-primary.outline:active.disabled, .btn.btn-primary.outline:active:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover.disabled:hover, .btn.btn-primary.outline:hover:disabled:hover, .btn.btn-primary.outline:active.disabled:hover, .btn.btn-primary.outline:active:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover.disabled:focus, .btn.btn-primary.outline:hover:disabled:focus, .btn.btn-primary.outline:active.disabled:focus, .btn.btn-primary.outline:active:disabled:focus {
+  box-shadow: none;
+}
+/* line 31, ../scss/base/_buttons.scss */
+.btn.btn-secondary {
+  background: #ffffff;
+  color: #1D1B7A;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-secondary:hover {
+  background: #ededed;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-secondary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(68, 105, 234, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-secondary:active {
+  background: #e6e6e6;
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-secondary.disabled, .btn.btn-secondary:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-secondary.disabled:hover, .btn.btn-secondary:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-secondary.disabled:focus, .btn.btn-secondary:disabled:focus {
+  box-shadow: none;
+}
+/* line 33, ../scss/base/_buttons.scss */
+.btn.btn-secondary.outline {
+  background: transparent;
+  color: #E6E8FB;
+  border: 0.15rem solid #E6E8FB;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover {
+  background: transparent;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(68, 105, 234, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:active {
+  background: transparent;
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline.disabled, .btn.btn-secondary.outline:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline.disabled:hover, .btn.btn-secondary.outline:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline.disabled:focus, .btn.btn-secondary.outline:disabled:focus {
+  box-shadow: none;
+}
+/* line 36, ../scss/base/_buttons.scss */
+.btn.btn-secondary.outline:hover, .btn.btn-secondary.outline:active {
+  background: #E6E8FB;
+  color: #ffffff;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover:hover, .btn.btn-secondary.outline:active:hover {
+  background: #c7ccf6;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover:focus, .btn.btn-secondary.outline:active:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(68, 105, 234, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover:active, .btn.btn-secondary.outline:active:active {
+  background: #bac0f4;
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover.disabled, .btn.btn-secondary.outline:hover:disabled, .btn.btn-secondary.outline:active.disabled, .btn.btn-secondary.outline:active:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover.disabled:hover, .btn.btn-secondary.outline:hover:disabled:hover, .btn.btn-secondary.outline:active.disabled:hover, .btn.btn-secondary.outline:active:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover.disabled:focus, .btn.btn-secondary.outline:hover:disabled:focus, .btn.btn-secondary.outline:active.disabled:focus, .btn.btn-secondary.outline:active:disabled:focus {
+  box-shadow: none;
+}
+/* line 42, ../scss/base/_buttons.scss */
+.btn.small {
+  padding: 1.1rem 1.6rem;
+  font-size: 1.35rem;
+}
+/* line 46, ../scss/base/_buttons.scss */
+.btn.medium {
+  font-size: 1.4rem;
+  padding: 11px 38px;
+}
+
+/* line 1, ../scss/base/_general.scss */
+.title-section {
+  color: #1D1B7A;
+  font-family: "Russo One", sans-serif;
+  font-size: 36px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* line 8, ../scss/base/_general.scss */
+.subtitle-section {
+  color: #1D1B7A;
+  font-family: "Russo One", sans-serif;
+  font-size: 34px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* line 15, ../scss/base/_general.scss */
+.cities__description {
+  color: #ffffff;
+  font-family: "Rufina", serif;
+  font-size: 22px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 1, ../scss/components/_header.scss */
+.header {
+  align-content: center;
+  background-color: #1D1B7A;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: center;
+  width: 100%;
+}
+/* line 10, ../scss/components/_header.scss */
+.header .menu .navbar {
+  display: none;
+}
+/* line 14, ../scss/components/_header.scss */
+.header .bar {
+  align-items: center;
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-between;
+  width: 100%;
+}
+/* line 20, ../scss/components/_header.scss */
+.header .bar img {
+  margin-left: 1rem;
+  width: 3rem;
+  height: 4rem;
+}
+/* line 25, ../scss/components/_header.scss */
+.header .bar .bar__icon {
+  font-size: 5rem;
+}
+/* line 28, ../scss/components/_header.scss */
+.header .bar .title-header {
+  font-family: "Redressed", "cursive";
+  color: #ffffff;
+}
+
+/* line 2, ../scss/components/_footer.scss */
+.footer .container {
+  font-family: "Rufina", serif;
+}
+/* line 4, ../scss/components/_footer.scss */
+.footer .container .footer__redes {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* line 9, ../scss/components/_footer.scss */
+.footer .container .footer__redes img {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  width: 4rem;
+  height: 4rem;
+}
+/* line 16, ../scss/components/_footer.scss */
+.footer .container .footer__redes .footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 1, ../scss/components/_promotions.scss */
+.promotions {
+  background: #ffffff;
+}
+/* line 4, ../scss/components/_promotions.scss */
+.promotions .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 9, ../scss/components/_promotions.scss */
+.promotions .container .list {
+  display: none;
+}
+
+/* line 1, ../scss/components/_banner.scss */
+.banner {
+  background: #AEC5FF;
+}
+/* line 3, ../scss/components/_banner.scss */
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 8, ../scss/components/_banner.scss */
+.banner .container .title-page {
+  display: none;
+}
+/* line 11, ../scss/components/_banner.scss */
+.banner .container img {
+  display: none;
+}
+
+/* line 1, ../scss/components/_cities.scss */
+.cities {
+  background: #4469EA;
+}
+/* line 6, ../scss/components/_cities.scss */
+.cities .container .title-section {
+  color: #ffffff;
+}
+/* line 9, ../scss/components/_cities.scss */
+.cities .container .cities__galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+/* line 14, ../scss/components/_cities.scss */
+.cities .container .cities__galeria picture {
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 3, ../scss/components/_contact.scss */
+.contact .container .form-group {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rufina", serif;
+  margin-top: 15px;
+}
+/* line 10, ../scss/components/_contact.scss */
+.contact .container .form-group input {
+  border: 2px solid #1D1B7A;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-family: "Rufina", serif;
+  height: 38px;
+}
+/* line 17, ../scss/components/_contact.scss */
+.contact .container .form-group .form-actions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 1, ../scss/components/_aside.scss */
+aside {
+  display: none;
+}
+
+/* line 1, ../scss/components/_supermarkets.scss */
+.supermarkets {
+  background: #4469EA;
+}
+/* line 3, ../scss/components/_supermarkets.scss */
+.supermarkets .container {
+  color: #ffffff;
+  font-family: "Rufina", serif;
+  font-size: 22px;
+}
+/* line 8, ../scss/components/_supermarkets.scss */
+.supermarkets .container .title-section {
+  color: #ffffff;
+}
+/* line 11, ../scss/components/_supermarkets.scss */
+.supermarkets .container picture {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+/* line 16, ../scss/components/_supermarkets.scss */
+.supermarkets .container .supermarkets__topinfo {
+  margin-top: 20px;
+}
+/* line 19, ../scss/components/_supermarkets.scss */
+.supermarkets .container .btn-link {
+  color: #ffffff;
+  font-size: 16px;
+}
