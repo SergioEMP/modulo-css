@@ -1,22 +1,51 @@
 .cities{
     background:color(primary,base);
+    margin-top: 20px;
 
     .container{
-
         .title-section{
             color: color(grayscale,white);
+            padding-top: 20px;
         }
         .cities__galeria{
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
+            &.only-desktop{
+                display: none;
+            }
             picture {
                 max-width: 100%;
                 width: auto;
+                height: auto;
             }
          
         }
        
+    }
+}
+@include mq-min(lg){
+    .cities{
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction:column ;
+            .title-section{
+                width:800px;
+            }
+
+            .cities__galeria{
+                display: flex;
+                align-items: center;
+                flex-direction:column ;
+                &.only-ipad{
+                    display: flex;
+                }
+                .cities__description{
+                    width: 500px;
+                }
+            }
+        }
     }
 }

@@ -5,11 +5,26 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        .content-media{
+            margin-top: 30px;
+            padding: 0 20px;
+            video{
+                max-width: 100%;
+                width: auto;
+                height: auto;
+            }
+        }
         .list{
             display: none;
         }
     }  
     
+}
+@include mq-min(lg){
+    .container{
+        .title-section{
+            width: 600px;
+        }
+    }
 }
 

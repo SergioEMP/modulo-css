@@ -22,3 +22,36 @@
             }
     }
 }
+
+@include mq-min(lg){
+    .supermarkets{
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .title-section{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .supermarkets__info{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+                width: 100%;
+                padding: 50px 200px;
+                .supermarkets__topinfo{
+                    width: 350px;
+                    margin-top: 0;
+                }
+                ul{
+                    list-style: disc;
+                }
+                .supermarkets__link{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

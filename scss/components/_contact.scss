@@ -22,3 +22,10 @@
         } 
     } 
 }
+@include mq-min(lg){
+    .contact{
+        .container{
+            padding:0 200px;
+        }
+    }
+}

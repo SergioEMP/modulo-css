@@ -29,6 +29,37 @@
             font-family: $font-header;
             color: color(grayscale, white);
         }
+    }
+}
 
+@include mq-min(lg){
+    .header{
+        background-color: color(secondary,base);
+        padding: 2rem;
+        width: fit-content;
+        align-items: center;
+        position: absolute;
+        .menu{
+            .navbar{
+                margin-left: 2rem;
+                display: flex;
+                display: block;
+                list-style: none;
+                width: fit-content;
+                justify-content: space-between;
+                .bar__icon{
+                    font-size: 8rem;
+                }
+                span{
+                    font-size: 6rem; 
+                    color: color(grayscale,black);
+                }
+                
+            }
+            
+        }
+        .bar{
+            display: none;
+        }
     }
 }
