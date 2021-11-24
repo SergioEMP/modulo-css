@@ -49,3 +49,12 @@
         }
     }
 }
+@include mq-min(xl){
+    .footer{
+        .container{
+            .footer__redes{
+                width: 180px;
+            }
+        }
+    }
+}

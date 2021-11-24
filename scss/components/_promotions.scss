@@ -27,4 +27,27 @@
         }
     }
 }
-
+@include mq-min(xl){
+    .promotions{
+        .container{
+            .content{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                .content-media{
+                    video{
+                        max-width: 80%;
+                    }
+                }
+                .list{
+                display: block;
+                list-style: disc;
+                margin-top: 80px;
+                font-family: $font-secondary;
+                font-size: 30px;
+                width: 215px;
+                }
+            }
+        }
+    }
+}

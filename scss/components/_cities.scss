@@ -49,3 +49,33 @@
         }
     }
 }
+@include mq-min(lg){
+    .cities{
+        .container{
+            .grilla-1{
+                display: flex;
+                align-items: center;
+                flex-direction:row ;
+                .cities__description{
+                    width: 450px;
+                } 
+            }
+            .grilla-2{
+                display: flex;
+                align-items: center;
+                flex-direction:row ;
+                .cities__galeria{
+                    display: flex;
+                    align-items: center;
+                    flex-direction:column ;
+                    &.only-desktop{
+                        display: flex;
+                    }
+                    .cities__description{
+                        width: 450px;
+                    }    
+                }    
+            }
+        }
+    }
+}

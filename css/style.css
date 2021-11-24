@@ -364,7 +364,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     display: inline-block;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   /* line 39, ../scss/base/_flexbox.scss */
   .d-xl-flex {
     display: flex;
@@ -797,7 +797,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     grid-column: span 12;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
   /* line 60, ../scss/base/_grid.scss */
   .grid-xl-1 {
     grid-column: span 1;
@@ -1277,6 +1277,12 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     color: #666666;
   }
 }
+@media (min-width: 1440px) {
+  /* line 55, ../scss/components/_footer.scss */
+  .footer .container .footer__redes {
+    width: 180px;
+  }
+}
 /* line 1, ../scss/components/_promotions.scss */
 .promotions {
   background: #ffffff;
@@ -1307,6 +1313,27 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   /* line 25, ../scss/components/_promotions.scss */
   .container .title-section {
     width: 600px;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 33, ../scss/components/_promotions.scss */
+  .promotions .container .content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  /* line 38, ../scss/components/_promotions.scss */
+  .promotions .container .content .content-media video {
+    max-width: 80%;
+  }
+  /* line 42, ../scss/components/_promotions.scss */
+  .promotions .container .content .list {
+    display: block;
+    list-style: disc;
+    margin-top: 80px;
+    font-family: "Rufina", serif;
+    font-size: 30px;
+    width: 215px;
   }
 }
 /* line 1, ../scss/components/_banner.scss */
@@ -1379,6 +1406,25 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     width: 300px;
   }
 }
+@media (min-width: 1440px) {
+  /* line 64, ../scss/components/_banner.scss */
+  .banner .container .banner__part-1 .title-page {
+    color: #ffffff;
+    display: block;
+    font-family: "Redressed", "cursive";
+    font-size: 40px;
+  }
+  /* line 71, ../scss/components/_banner.scss */
+  .banner .container .banner__part-2 {
+    margin-left: 250px;
+  }
+  /* line 73, ../scss/components/_banner.scss */
+  .banner .container .banner__part-2 .title-section {
+    color: #ffffff;
+    text-align: center;
+    width: 300px;
+  }
+}
 /* line 1, ../scss/components/_cities.scss */
 .cities {
   background: #4469EA;
@@ -1433,6 +1479,38 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     width: 500px;
   }
 }
+@media (min-width: 960px) {
+  /* line 55, ../scss/components/_cities.scss */
+  .cities .container .grilla-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  /* line 59, ../scss/components/_cities.scss */
+  .cities .container .grilla-1 .cities__description {
+    width: 450px;
+  }
+  /* line 63, ../scss/components/_cities.scss */
+  .cities .container .grilla-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  /* line 67, ../scss/components/_cities.scss */
+  .cities .container .grilla-2 .cities__galeria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 71, ../scss/components/_cities.scss */
+  .cities .container .grilla-2 .cities__galeria.only-desktop {
+    display: flex;
+  }
+  /* line 74, ../scss/components/_cities.scss */
+  .cities .container .grilla-2 .cities__galeria .cities__description {
+    width: 450px;
+  }
+}
 /* line 3, ../scss/components/_contact.scss */
 .contact .container .form-group {
   color: #000000;
@@ -1460,6 +1538,29 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   /* line 27, ../scss/components/_contact.scss */
   .contact .container {
     padding: 0 200px;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 34, ../scss/components/_contact.scss */
+  .contact .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* line 38, ../scss/components/_contact.scss */
+  .contact .container .title-section {
+    text-align: left;
+    width: 360px;
+  }
+  /* line 42, ../scss/components/_contact.scss */
+  .contact .container .form-group {
+    width: 500px;
+  }
+  /* line 45, ../scss/components/_contact.scss */
+  .contact .container aside {
+    display: block;
+    flex-direction: column;
+    margin-left: 180px;
   }
 }
 /* line 1, ../scss/components/_aside.scss */
@@ -1530,5 +1631,31 @@ aside {
   /* line 50, ../scss/components/_supermarkets.scss */
   .supermarkets .container .supermarkets__info .supermarkets__link {
     display: none;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 61, ../scss/components/_supermarkets.scss */
+  .supermarkets .container .supermarkets__content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  /* line 65, ../scss/components/_supermarkets.scss */
+  .supermarkets .container .supermarkets__content img {
+    margin-left: 260px;
+  }
+  /* line 68, ../scss/components/_supermarkets.scss */
+  .supermarkets .container .supermarkets__content .supermarkets__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: left;
+    padding: 40px 0px;
+  }
+  /* line 74, ../scss/components/_supermarkets.scss */
+  .supermarkets .container .supermarkets__content .supermarkets__info .supermarkets__link {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 200px;
   }
 }

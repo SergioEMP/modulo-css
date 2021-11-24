@@ -57,3 +57,25 @@
         }
     }
 }  
+@include mq-min(xl){
+    .banner{
+        .container{    
+            .banner__part-1{
+                .title-page{
+                    color:color(grayscale,white);
+                    display: block;
+                    font-family: $font-header;
+                    font-size: 40px;
+                }
+            }    
+            .banner__part-2{
+                margin-left: 250px;
+                .title-section{
+                color:color(grayscale,white);
+                text-align: center;
+                width: 300px;
+                }
+            }
+        }
+    }
+}
