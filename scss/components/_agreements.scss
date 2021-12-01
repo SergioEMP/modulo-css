@@ -1,0 +1,114 @@
+.agreements{
+    background: color(primary,base);
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        &__title-section{
+            color: color(grayscale,white);
+            font-size: 34px;
+            line-height: 48px;
+            padding-top: 50px;
+            text-align: center;
+            width: 314px;
+        }
+        picture{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding-top: 44px;
+        }
+        &__info{
+            color: color(grayscale,white);
+            font-family: $font-secondary;
+            font-size: 24px;
+            line-height: 30px;
+            padding-bottom: 50px;
+            width: 314px;
+        }
+        &__topinfo{
+            padding-top: 50px;
+        }
+        ul{
+            list-style: disc;
+            padding-left: 37px;
+            padding-bottom: 30px;
+        }
+        .btn-link{
+            color: color(grayscale,white);
+            font-size: 22px;
+            padding-left: 195px;
+            }
+}
+
+@include mq-min(lg){
+    .supermarkets{
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .title-section{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .supermarkets__info{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+                width: 100%;
+                padding: 50px 200px;
+                .supermarkets__topinfo{
+                    width: 350px;
+                    margin-top: 0;
+                }
+                ul{
+                    list-style: disc;
+                }
+                .supermarkets__link{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+@include mq-min(xl){
+    .agreements{
+        &__title-section{
+            font-size: 48px;
+            margin-top: 15px;
+            text-align: center;
+            width: 656px;
+        }
+        &__content{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            img{
+                margin-left: 260px;
+                height: 450px;
+                width: 450px;
+                padding-bottom: 50px;
+            }
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            text-align: left;
+            padding: 40px 0px;
+        }
+        &__topinfo{
+            font-size: 36px;
+            line-height: 40px;
+        }
+        &__link{
+            display: flex;
+            font-size: 28px;
+            margin-top: 30px;
+            margin-left: 200px;
+        }
+    }
+}

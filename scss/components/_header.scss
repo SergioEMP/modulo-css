@@ -6,63 +6,64 @@
     height: fit-content;
     justify-content: center;
     width: 100%;
-    .menu{
-        .navbar{
+    &__menu{
+        &-navbar{
             display: none;
         }
     }
-    .bar{
+    &__bar{
         align-items: center;
         display: flex;
         font-size: 3rem;
+        height: 90px;
         justify-content: space-between;
         width: 100%;
         img{
-            margin-left: 1rem;
-            width: 3rem;
+            margin-left: 1.5rem;
             height: 4rem;
+            width: 5rem;
         }
-        .bar__icon{
-            font-size: 5rem; 
-        }
-        .title-header{
+        &-title-header{
             font-family: $font-header;
             color: color(grayscale, white);
+            font-size: 42px;
+        }
+        &-bar-icon{
+            font-size: 8rem; 
         }
     }
 }
-
 @include mq-min(lg){
     .header{
+        position: fixed;
         background-color: color(secondary,base);
         padding: 2rem;
         width: fit-content;
         align-items: center;
         position: absolute;
-        .menu{
-            .navbar{
+        &__menu{
+            &-navbar{
                 margin-left: 2rem;
                 display: flex;
                 display: block;
                 list-style: none;
                 width: fit-content;
                 justify-content: space-between;
-                .bar__icon{
-                    font-size: 8rem;
-                }
                 span{
                     font-size: 6rem; 
-                    color: color(grayscale,black);
                 }
-                
+                &-icon{
+                    font-size: 12rem;
+                }    
             }
-            
         }
-        .bar{
+        &__bar{
             display: none;
         }
     }
 }
 @include mq-min(xl){
-    
+    .header{
+        position: fixed;
+    }
 }

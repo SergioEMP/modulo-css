@@ -11,20 +11,20 @@
 </head>
 <body>
     <header class="header">
-        <nav class="menu">
-            <div class="navbar">
+        <nav class="header__menu">
+            <div class="header__menu-navbar">
                 <a href="#" class="brand">
-                    <span class="icon-swift bar__icon"></span>
+                    <span class="icon-swift header__menu-icon"></span>
                 </a>
-                <ul class="list-pro">
+                <ul class="header__menu-list">
                     <li>
                         <a href="#">
-                            <span class="icon-home"></span>
+                            <img src="/images/home.png" width="52" height="52" alt="Icono de inicio">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon-user"></span>
+                            <img src="/images/profile.png" width="52" height="52" alt="Icono de perfil">
                         </a>
                     </li>
                     <li>
@@ -39,45 +39,45 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon-shop"></span>
+                            <img src="/images/shop.png" width="52" height="52" alt="Icono de tiendas">
                         </a>
                     </li>
                 </ul>
             </div>    
         </nav>
-        <div class="bar">
+        <div class="header__bar">
             <img src="images/menu.svg" width="100" height="100" alt="Icono de menu">
-            <h1 class="title-header">VIP TOURS</h1>
-            <span class="icon-swift bar__icon"></span>
+            <h1 class="header__bar-title-header">VIP TOURS</h1>
+            <span class="icon-swift header__bar-bar-icon"></span>
         </div>
     </header>
     <main class="main">
         <section class="banner">
             <div class="container">
-                <div class="banner__part-1">
-                    <h1 class="title-page">VIP TOURS</h1>
+                <div class="banner__part1">
+                    <h1 class="banner__part1-title-page">VIP TOURS</h1>
                     <picture>
                         <source srcset="images/illustracion-0.webp" type="image/webp">
                         <img src="images/illustracion-0.png" width="279" height="386" alt="Ilustracion de viajes">
                     </picture>
                 </div>
-                <div class="banner__part-2">
-                    <h2 class="title-section">¡Registrate y obtén un 10% de descuento en tu primer vuelo!</h2>
-                    <button type="submit" class="btn btn-secondary" name="Registro">Registrarme</button>
+                <div class="banner__part2">
+                    <h2 class="banner__part2-title-section">¡Registrate y obtén un 10% de descuento en tu primer vuelo!</h2>
+                    <button type="button" class="btn btn-secondary" name="Registro">Registrarme</button>
                 </div>
             </div>
         </section> 
-        <section class="promotions">
+        <section class="multimedia">
             <div class="container">
-                <h2 class="title-section">Disfruta de los mejores hoteles a donde quiera que vayas</h2>
-                <div class="content">
-                    <div class="content-media">
-                        <video class="video" preload="none" muted poster="images/poster.png" controls>
+                <h2 class="multimedia__title-section">Disfruta de los mejores hoteles a donde quiera que vayas</h2>
+                <div class="multimedia__content">
+                    <div class="multimedia__media">
+                        <video class="multimedia__media-video" preload="none" muted poster="images/poster.png" controls>
                             <source src="images/video.webp" type="video/webm">
                             <source src="images/video.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <ul class="list">
+                    <ul class="multimedia__list">
                         <li>Mónaco</li>
                         <li>París</li>
                         <li>Roma</li>
@@ -88,75 +88,71 @@
                 </div>
             </div>
         </section>    
-        <section class="cities">
+        <section class="grid">
             <div class="container">
-                <h2 class="title-section">Tenemos convenio con los aeropuertos de las ciudades más importantes del mundo</h2>
-                <div class="grilla-1">
-                    <div class="cities__galeria">
+                <h2 class="grid__title-section">Tenemos convenio con los aeropuertos de las ciudades más importantes del mundo</h2>
+                    <div class="grid__galeria">
                         <picture>
                             <source srcset="images/1.webp" type="images/webp">
-                            <img src="images/1.jpg" width="350" height="350" alt="Imagen de Paris">
+                            <img src="images/1.jpg" width="314" height="300" alt="Imagen de Paris">
                         </picture>
-                        <div class="cities__description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
+                        <div class="grid__description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ultricies luctus arcu.</p>
                         </div>
                     </div>
-                    <div class="cities__galeria">
+                    <div class="grid__galeria">
                         <picture>
                             <source srcset="images/2.webp" type="image/webp">
-                            <img src="images/2.jpg" width="350" height="350" alt="Imagen de Roma">
+                            <img src="images/2.jpg" width="314" height="300" alt="Imagen de Roma">
                         </picture>
-                        <div class="cities__description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
+                        <div class="grid__description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ultricies luctus arcu.</p>
                         </div>
                     </div>
-                    <div class="cities__galeria only-ipad only-desktop">
+                    <div class="grid__galeria only-ipad only-desktop">
                         <picture>
                             <source srcset="images/3.webp" type="image/webp">
                             <img src="images/3.jpg" width="350" height="350" alt="Imagen de TTokio">
                         </picture>
-                        <div class="cities__description">
+                        <div class="grid__description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="grilla-2">    
-                    <div class="cities__galeria only-desktop">
-                        <picture class="cities__galeria">
+                    </div>  
+                    <div class="grid__galeria only-desktop">
+                        <picture>
                             <source srcset="images/4.webp" type="image/webp">
                             <img src="images/4.jpg" width="350" height="350" alt="Imagen de Nueva York">
                         </picture>
-                        <div class="cities__description">
+                        <div class="grid__description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
                         </div>
                     </div>
-                    <div class="cities__galeria only-desktop">
-                        <picture class="cities__galeria">
+                    <div class="grid__galeria only-desktop">
+                        <picture>
                             <source srcset="images/5.webp" type="image/webp">
                             <img src="images/5.jpg" width="350" height="350" alt="Imagen de Sidney">
                         </picture>
-                        <div class="cities__description">
+                        <div class="grid__description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
                         </div>
                     </div>
-                    <div class="cities__galeria only-desktop">
-                        <picture class="cities__galeria">
+                    <div class="grid__galeria only-desktop">
+                        <picture>
                             <source srcset="images/6.webp" type="image/webp">
                             <img src="images/6.jpg" width="350" height="350" alt="Imagen de Monterrey">
                         </picture>
-                        <div class="cities__description">
+                        <div class="grid__description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
                         </div>
                     </div>
-                </div>    
             </div>
         </section>
         <section class="contact">
             <div class="container">
                 <div class="contact__left">
-                    <h2 class="title-section">Adquiere tu 10% de descuento</h2>
+                    <h2 class="contact__title-section">Adquiere tu 10% de descuento</h2>
                     <form action="#">
-                        <div class="form-group">
+                        <div class="contact__form-group">
                             <label for="name">Nombre</label>
                             <input type="text" id="name" name="user-name" placeholder="Ingresa tu nombre">
                             <label for="email">Correo Electrónico</label>
@@ -164,8 +160,8 @@
                             <label for="telefono">Teléfono</label>
                             <input type="number" id="telefono" name="user-tel" placeholder="Ingresa tu teléfono">
                         </div>
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        <div class="contact__form-actions">
+                            <button type="submit" class="btn btn-primary">Envíar</button>
                         </div>
                     </form>
                 </div>
@@ -178,16 +174,16 @@
                 </aside>   
             </div> 
         </section>
-        <section class="supermarkets">
+        <section class="agreements">
             <div class="container">
-                <h2 class="title-section">¿Deseas ahorrar aún más?</h2>
-                <div class="supermarkets__content">
+                <h2 class="agreements__title-section">¿Deseas ahorrar aún más?</h2>
+                <div class="agreements__content">
                     <picture>
                         <source srcset="images/illustration-2.webp" type="image/webp">
                         <img src="images/illustration-2.png" width="314" height="314" alt="Ilustracion tiendas con convenio">
                     </picture>
-                    <div class="supermarkets__info">
-                        <div class="supermarkets__topinfo">
+                    <div class="agreements__info">
+                        <div class="agreements__topinfo">
                             <p>
                                 Visita las cadenas de supermercados con las que tenemos convenio para que tu ahorro sea aún mayor:
                             </p>
@@ -198,7 +194,7 @@
                             <li>Carrefour</li>
                             <li>El corte ingles</li>
                         </ul>
-                        <div class="supermarkets__link">
+                        <div class="agreements__link">
                             <a href="" class="btn-link">Ver más</a>
                         </div>
                     </div>
@@ -211,20 +207,20 @@
         <div class="container">
             <nav class="footer__redes">
                 <a href="#" target="blank" rel="nofollow noopener">
-                    <img src="images/twitter.png" width="100" height="100" alt="Icono twitter">
+                    <span class="icon-twitter footer__redes-icons"></span>
                 </a>
                 <a href="#" target="blank" rel="nofollow noopener">
-                    <img src="images/facebook.png" width="100" height="100" alt="Icono facebook">
+                    <span class="icon-facebook footer__redes-icons"></span>
                 </a>
                 <a href="#" target="blank" rel="nofollow noopener">
-                    <img src="images/instagram.png" width="100" height="100" alt="Icono instagram">
+                    <img src="images/instagram.png" width="35" height="35" alt="Icono instagram">
                 </a>
             </nav>
             <div class="footer__info">
                 <p>Escríbenos: <a href="viptours@aviacion.com" class="correo">viptours@aviacion.com</a></p>
-                <p class="direccion">7191 Deckow TrafficwayNew - Vallieville</p>
+                <p class="direction">7191 Deckow TrafficwayNew - Vallieville</p>
             </div>
-            <div class="footer__copyrigth">
+            <div class="footer__copyright">
                 <p>Copyright © 2021 | VIP Tours</p>
             </div>
         </div>

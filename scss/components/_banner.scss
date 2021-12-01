@@ -1,81 +1,89 @@
 .banner{
     background: color(complementary,three); 
     .container{
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
-
-        .title-page{
-            display: none;
         }
-        img{
-            display: none;
+        &__part1{
+            &-title-page{
+                display: none;
+            }
+            img{
+                display: none;
+                }
         }
-    }
-}
-@include mq-min(lg){
-    .banner{
-        background: color(complementary,five);
-        .container{  
+        &__part2{
             display: flex;
-            flex-direction: row;
-            background: color(complementary,five);
-            padding-left: 200px;
-            width: 100%;    
-            .banner__part-1{
-                text-align: center;
-                margin-top: 30px;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                .title-page{
-                    color:color(grayscale,white);
-                    display: block;
-                    font-family: $font-header;
-                    font-size: 40px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                &-title-section{
+                    color: color(primary,dark);
+                    font-size: 38px;
+                    line-height: 47px; 
+                    padding-top: 50px;
+                    text-align: center;
+                    width: 314px;
                 }
-                img{
-                    margin-top: 30px;
-                    display: block;
-                    max-width: 100%;
-                    width: auto;
-                    height: auto;
-                    margin-bottom: 50px;
-                }
-            }    
-            .banner__part-2{
-                margin-left: 100px;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                .title-section{
-                color:color(grayscale,white);
-                text-align: center;
-                width: 300px;
+                button{
+                    padding-bottom: 20px;
                 }
             }
         }
-    }
-}  
 @include mq-min(xl){
     .banner{
-        .container{    
-            .banner__part-1{
-                .title-page{
+        background: color(complementary,five);
+        .container{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        }
+            &__part1{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                margin-left:202px ;
+                text-align: center;
+                
+                &-title-page{
                     color:color(grayscale,white);
                     display: block;
                     font-family: $font-header;
-                    font-size: 40px;
+                    font-size: 98px;
+                    margin-left: 5px;
+                    margin-top: 25px;
+                }
+                img{
+                    display: block;
+                    height: auto;
+                    margin-bottom: 50px;
+                    max-width: 100%;
+                    width: auto;
                 }
             }    
-            .banner__part-2{
-                margin-left: 250px;
-                .title-section{
+            &__part2{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin-left: 194px;
+                margin-top: 14px;
+                
+                &-title-section{
                 color:color(grayscale,white);
+                font-size: 50px;
+                line-height: 57px;
+                padding-top:15px;
                 text-align: center;
-                width: 300px;
+                width: 341px;
+                }
+                button{
+                    font-size: 36px;
+                    margin-top: 65px;
+                    height: 77px;
+                    width: 287px;
                 }
             }
-        }
     }
-}
+}  

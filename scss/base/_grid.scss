@@ -12,13 +12,13 @@
       max-width: map-get($breakpoints, "lg") - 100px ;
    }
    @include mq-min(lg) {
-      max-width: 1140px;
+      max-width: 1440px;
    }
 }
 
 .grid {
    display: grid;
-   grid-template-columns: repeat(12, 1fr);
+   grid-template-columns: repeat(1, 1fr);
    grid-gap: 1rem;
    @include mq-max(sm) {
       grid-gap: 0;

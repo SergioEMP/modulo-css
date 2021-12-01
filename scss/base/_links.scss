@@ -9,10 +9,9 @@ a, button {
          text-decoration: none;
       }
    }
-
 	&:hover, &:focus {
       color: color( controls, dark );
-      @include mq-max(sm){
+       @include mq-max(sm){
          text-decoration: none;
       }
    }

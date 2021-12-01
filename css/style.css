@@ -70,14 +70,6 @@ hr {
 }
 
 @font-face {
-  font-family: 'iconFont';
-  src: url("./../fonts/iconFonts/iconFont.eot?esom0w");
-  src: url("./../fonts/iconFonts/iconFont.eot?esom0w#iefix") format("embedded-opentype"), url("./../fonts/iconFonts/iconFont.ttf?esom0w") format("truetype"), url("./../fonts/iconFonts/iconFont.woff?esom0w") format("woff"), url("./../fonts/iconFonts/iconFont.svg?esom0w#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
   font-family: 'Russo One';
   src: url("./../fonts/RussoOne/RussoOne-Regular.woff2") format("woff2"), url("./../fonts/RussoOne/RussoOne-Regular.woff") format("woff");
   font-weight: normal;
@@ -105,50 +97,6 @@ hr {
   font-style: normal;
   font-display: swap;
 }
-/* line 51, ../scss/config/_fonts.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'iconFont' !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 65, ../scss/config/_fonts.scss */
-.icon-chat:before {
-  content: "\e900";
-}
-
-/* line 68, ../scss/config/_fonts.scss */
-.icon-email:before {
-  content: "\e901";
-}
-
-/* line 71, ../scss/config/_fonts.scss */
-.icon-home:before {
-  content: "\e902";
-}
-
-/* line 74, ../scss/config/_fonts.scss */
-.icon-shop:before {
-  content: "\e903";
-}
-
-/* line 77, ../scss/config/_fonts.scss */
-.icon-swift:before {
-  content: "\e904";
-}
-
-/* line 80, ../scss/config/_fonts.scss */
-.icon-user:before {
-  content: "\e905";
-}
-
 /* line 2, ../scss/base/_body.scss */
 *,
 *:before, *:after {
@@ -193,17 +141,17 @@ a, button {
 a.button:hover, button.button:hover {
   text-decoration: none;
 }
-/* line 13, ../scss/base/_links.scss */
+/* line 12, ../scss/base/_links.scss */
 a:hover, a:focus, button:hover, button:focus {
   color: #0056B3;
 }
 @media (max-width: 539px) {
-  /* line 13, ../scss/base/_links.scss */
+  /* line 12, ../scss/base/_links.scss */
   a:hover, a:focus, button:hover, button:focus {
     text-decoration: none;
   }
 }
-/* line 19, ../scss/base/_links.scss */
+/* line 18, ../scss/base/_links.scss */
 a.underline-link, button.underline-link {
   color: #0074FC;
   cursor: pointer;
@@ -212,7 +160,7 @@ a.underline-link, button.underline-link {
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 27, ../scss/base/_links.scss */
+/* line 26, ../scss/base/_links.scss */
 a.text-link, button.text-link {
   font-family: "Russo One", sans-serif;
   font-size: 1.6rem;
@@ -228,30 +176,30 @@ a.text-link, button.text-link {
   padding: 0;
   cursor: pointer;
 }
-/* line 41, ../scss/base/_links.scss */
+/* line 40, ../scss/base/_links.scss */
 a.text-link.text-primary-base, button.text-link.text-primary-base {
   color: #4469EA;
 }
-/* line 43, ../scss/base/_links.scss */
+/* line 42, ../scss/base/_links.scss */
 a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   color: #1D1B7A;
 }
-/* line 47, ../scss/base/_links.scss */
+/* line 46, ../scss/base/_links.scss */
 a.text-link.text-secondary-base, button.text-link.text-secondary-base {
   color: #E6E8FB;
 }
-/* line 49, ../scss/base/_links.scss */
+/* line 48, ../scss/base/_links.scss */
 a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hover {
   color: #615353;
 }
-/* line 53, ../scss/base/_links.scss */
+/* line 52, ../scss/base/_links.scss */
 a.text-link.text-primary-base, button.text-link.text-primary-base {
   color: #1D1B7A;
   font-size: 2rem;
   text-decoration: underline;
   text-transform: none;
 }
-/* line 58, ../scss/base/_links.scss */
+/* line 57, ../scss/base/_links.scss */
 a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   color: #4469EA;
 }
@@ -520,6 +468,77 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   align-self: stretch;
 }
 
+@font-face {
+  font-family: 'iconFont';
+  src: url("./../../fonts/iconFont.eot?ekiqni");
+  src: url("./../../fonts/iconFont.eot?ekiqni#iefix") format("embedded-opentype"), url("./../../fonts/iconFont.ttf?ekiqni") format("truetype"), url("./../../fonts/iconFont.woff?ekiqni") format("woff"), url("./../../fonts/iconFont.svg?ekiqni#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* line 13, ../scss/base/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconFont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 28, ../scss/base/_icons.scss */
+.icon-chat:before {
+  content: "\e900";
+}
+
+/* line 31, ../scss/base/_icons.scss */
+.icon-email:before {
+  content: "\e901";
+}
+
+/* line 34, ../scss/base/_icons.scss */
+.icon-facebook:before {
+  content: "\e902";
+}
+
+/* line 37, ../scss/base/_icons.scss */
+.icon-home:before {
+  content: "\e903";
+}
+
+/* line 40, ../scss/base/_icons.scss */
+.icon-shop:before {
+  content: "\e904";
+}
+
+/* line 43, ../scss/base/_icons.scss */
+.icon-swift:before {
+  content: "\e905";
+}
+
+/* line 46, ../scss/base/_icons.scss */
+.icon-twitter:before {
+  content: "\e906";
+  color: #050000;
+}
+
+/* line 50, ../scss/base/_icons.scss */
+.icon-twitter .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: white;
+}
+
+/* line 55, ../scss/base/_icons.scss */
+.icon-user:before {
+  content: "\e908";
+}
+
 /* line 1, ../scss/base/_grid.scss */
 .container {
   width: 100%;
@@ -537,14 +556,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 @media (min-width: 960px) {
   /* line 1, ../scss/base/_grid.scss */
   .container {
-    max-width: 1140px;
+    max-width: 1440px;
   }
 }
 
 /* line 19, ../scss/base/_grid.scss */
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
 }
 @media (max-width: 539px) {
@@ -870,12 +889,10 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   line-height: 1;
   outline: none;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
   width: 215px;
   height: 50px;
-  margin: 0 a;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 5px;
+  margin-bottom: 5rem;
 }
 @media (min-width: 760px) {
   /* line 1, ../scss/base/_buttons.scss */
@@ -883,14 +900,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     width: auto;
   }
 }
-/* line 21, ../scss/base/_buttons.scss */
+/* line 19, ../scss/base/_buttons.scss */
 .btn.btn-primary {
-  background: #1D1B7A;
+  background: #4469EA;
   color: #ffffff;
 }
 /* line 68, ../scss/config/_mixins.scss */
 .btn.btn-primary:hover {
-  background: #16155d;
+  background: #244fe6;
   transition: background 0.2s ease;
   text-decoration: none;
 }
@@ -902,7 +919,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 78, ../scss/config/_mixins.scss */
 .btn.btn-primary:active {
-  background: #131250;
+  background: #1946e2;
 }
 /* line 81, ../scss/config/_mixins.scss */
 .btn.btn-primary.disabled, .btn.btn-primary:disabled {
@@ -921,7 +938,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-primary.disabled:focus, .btn.btn-primary:disabled:focus {
   box-shadow: none;
 }
-/* line 23, ../scss/base/_buttons.scss */
+/* line 21, ../scss/base/_buttons.scss */
 .btn.btn-primary.outline {
   background: transparent;
   color: #1D1B7A;
@@ -960,7 +977,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-primary.outline.disabled:focus, .btn.btn-primary.outline:disabled:focus {
   box-shadow: none;
 }
-/* line 26, ../scss/base/_buttons.scss */
+/* line 24, ../scss/base/_buttons.scss */
 .btn.btn-primary.outline:hover, .btn.btn-primary.outline:active {
   background: #1D1B7A;
   color: #ffffff;
@@ -998,7 +1015,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-primary.outline:hover.disabled:focus, .btn.btn-primary.outline:hover:disabled:focus, .btn.btn-primary.outline:active.disabled:focus, .btn.btn-primary.outline:active:disabled:focus {
   box-shadow: none;
 }
-/* line 31, ../scss/base/_buttons.scss */
+/* line 29, ../scss/base/_buttons.scss */
 .btn.btn-secondary {
   background: #ffffff;
   color: #1D1B7A;
@@ -1036,7 +1053,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-secondary.disabled:focus, .btn.btn-secondary:disabled:focus {
   box-shadow: none;
 }
-/* line 33, ../scss/base/_buttons.scss */
+/* line 31, ../scss/base/_buttons.scss */
 .btn.btn-secondary.outline {
   background: transparent;
   color: #E6E8FB;
@@ -1075,7 +1092,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-secondary.outline.disabled:focus, .btn.btn-secondary.outline:disabled:focus {
   box-shadow: none;
 }
-/* line 36, ../scss/base/_buttons.scss */
+/* line 34, ../scss/base/_buttons.scss */
 .btn.btn-secondary.outline:hover, .btn.btn-secondary.outline:active {
   background: #E6E8FB;
   color: #ffffff;
@@ -1113,12 +1130,12 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-secondary.outline:hover.disabled:focus, .btn.btn-secondary.outline:hover:disabled:focus, .btn.btn-secondary.outline:active.disabled:focus, .btn.btn-secondary.outline:active:disabled:focus {
   box-shadow: none;
 }
-/* line 42, ../scss/base/_buttons.scss */
+/* line 40, ../scss/base/_buttons.scss */
 .btn.small {
   padding: 1.1rem 1.6rem;
   font-size: 1.35rem;
 }
-/* line 46, ../scss/base/_buttons.scss */
+/* line 44, ../scss/base/_buttons.scss */
 .btn.medium {
   font-size: 1.4rem;
   padding: 11px 38px;
@@ -1162,44 +1179,47 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   width: 100%;
 }
 /* line 10, ../scss/components/_header.scss */
-.header .menu .navbar {
+.header__menu-navbar {
   display: none;
 }
 /* line 14, ../scss/components/_header.scss */
-.header .bar {
+.header__bar {
   align-items: center;
   display: flex;
   font-size: 3rem;
+  height: 90px;
   justify-content: space-between;
   width: 100%;
 }
-/* line 20, ../scss/components/_header.scss */
-.header .bar img {
-  margin-left: 1rem;
-  width: 3rem;
+/* line 21, ../scss/components/_header.scss */
+.header__bar img {
+  margin-left: 1.5rem;
   height: 4rem;
+  width: 5rem;
 }
-/* line 25, ../scss/components/_header.scss */
-.header .bar .bar__icon {
-  font-size: 5rem;
-}
-/* line 28, ../scss/components/_header.scss */
-.header .bar .title-header {
+/* line 26, ../scss/components/_header.scss */
+.header__bar-title-header {
   font-family: "Redressed", "cursive";
   color: #ffffff;
+  font-size: 42px;
+}
+/* line 31, ../scss/components/_header.scss */
+.header__bar-bar-icon {
+  font-size: 8rem;
 }
 
 @media (min-width: 960px) {
-  /* line 36, ../scss/components/_header.scss */
+  /* line 37, ../scss/components/_header.scss */
   .header {
+    position: fixed;
     background-color: #E6E8FB;
     padding: 2rem;
     width: fit-content;
     align-items: center;
     position: absolute;
   }
-  /* line 43, ../scss/components/_header.scss */
-  .header .menu .navbar {
+  /* line 45, ../scss/components/_header.scss */
+  .header__menu-navbar {
     margin-left: 2rem;
     display: flex;
     display: block;
@@ -1207,48 +1227,72 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     width: fit-content;
     justify-content: space-between;
   }
-  /* line 50, ../scss/components/_header.scss */
-  .header .menu .navbar .bar__icon {
-    font-size: 8rem;
-  }
-  /* line 53, ../scss/components/_header.scss */
-  .header .menu .navbar span {
+  /* line 52, ../scss/components/_header.scss */
+  .header__menu-navbar span {
     font-size: 6rem;
-    color: #000000;
   }
-  /* line 61, ../scss/components/_header.scss */
-  .header .bar {
+  /* line 55, ../scss/components/_header.scss */
+  .header__menu-navbar-icon {
+    font-size: 12rem;
+  }
+  /* line 60, ../scss/components/_header.scss */
+  .header__bar {
     display: none;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 66, ../scss/components/_header.scss */
+  .header {
+    position: fixed;
   }
 }
 /* line 2, ../scss/components/_footer.scss */
 .footer .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   font-family: "Rufina", serif;
+  font-size: 22px;
 }
-/* line 4, ../scss/components/_footer.scss */
-.footer .container .footer__redes {
+/* line 10, ../scss/components/_footer.scss */
+.footer__redes {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-}
-/* line 9, ../scss/components/_footer.scss */
-.footer .container .footer__redes img {
-  margin-top: 2rem;
-  margin-left: 4rem;
-  margin-right: 2rem;
-  width: 4rem;
-  height: 4rem;
+  padding-top: 50px;
+  width: 179px;
 }
 /* line 16, ../scss/components/_footer.scss */
-.footer .container .footer__redes .footer__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.footer__redes-icons {
+  font-size: 48px;
+}
+/* line 20, ../scss/components/_footer.scss */
+.footer img {
+  height: 35px;
+  width: 35px;
+}
+/* line 25, ../scss/components/_footer.scss */
+.footer__info {
+  padding-top: 14px;
+  text-align: center;
+}
+/* line 28, ../scss/components/_footer.scss */
+.footer__info .direction {
+  color: #666666;
+}
+/* line 32, ../scss/components/_footer.scss */
+.footer__copyright {
+  padding-bottom: 50px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 @media (min-width: 960px) {
-  /* line 27, ../scss/components/_footer.scss */
+  /* line 40, ../scss/components/_footer.scss */
+  .footer {
+    height: 50px;
+  }
+  /* line 42, ../scss/components/_footer.scss */
   .footer .container {
     width: 100%;
     display: flex;
@@ -1256,84 +1300,116 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     flex-direction: row;
     align-items: center;
   }
-  /* line 33, ../scss/components/_footer.scss */
+  /* line 48, ../scss/components/_footer.scss */
   .footer .container .footer__redes {
     width: 250px;
     margin: 0;
   }
-  /* line 36, ../scss/components/_footer.scss */
+  /* line 51, ../scss/components/_footer.scss */
   .footer .container .footer__redes img {
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
   }
-  /* line 42, ../scss/components/_footer.scss */
+  /* line 57, ../scss/components/_footer.scss */
   .footer .container .footer__info {
     margin: 50px;
     text-align: center;
   }
-  /* line 45, ../scss/components/_footer.scss */
+  /* line 60, ../scss/components/_footer.scss */
   .footer .container .footer__info .direccion {
     color: #666666;
   }
 }
 @media (min-width: 1440px) {
-  /* line 55, ../scss/components/_footer.scss */
+  /* line 69, ../scss/components/_footer.scss */
+  .footer .container {
+    height: 100px;
+  }
+  /* line 71, ../scss/components/_footer.scss */
   .footer .container .footer__redes {
     width: 180px;
   }
 }
-/* line 1, ../scss/components/_promotions.scss */
-.promotions {
+/* line 1, ../scss/components/_multimedia.scss */
+.multimedia {
   background: #ffffff;
 }
-/* line 4, ../scss/components/_promotions.scss */
-.promotions .container {
+/* line 3, ../scss/components/_multimedia.scss */
+.multimedia .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 8, ../scss/components/_promotions.scss */
-.promotions .container .content-media {
+/* line 8, ../scss/components/_multimedia.scss */
+.multimedia__title-section {
+  color: #1D1B7A;
+  font-size: 34px;
+  line-height: 35px;
+  padding-top: 50px;
+  text-align: center;
+}
+/* line 15, ../scss/components/_multimedia.scss */
+.multimedia__content {
   margin-top: 30px;
   padding: 0 20px;
 }
-/* line 11, ../scss/components/_promotions.scss */
-.promotions .container .content-media video {
-  max-width: 100%;
-  width: auto;
+/* line 18, ../scss/components/_multimedia.scss */
+.multimedia__content video {
   height: auto;
+  max-width: 100%;
+  padding-bottom: 50px;
+  width: auto;
 }
-/* line 17, ../scss/components/_promotions.scss */
-.promotions .container .list {
+/* line 25, ../scss/components/_multimedia.scss */
+.multimedia__list {
   display: none;
 }
 
 @media (min-width: 960px) {
-  /* line 25, ../scss/components/_promotions.scss */
-  .container .title-section {
+  /* line 33, ../scss/components/_multimedia.scss */
+  .multimedia__title-section {
     width: 600px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 33, ../scss/components/_promotions.scss */
-  .promotions .container .content {
+  /* line 39, ../scss/components/_multimedia.scss */
+  .multimedia {
+    padding-bottom: 44px;
+  }
+  /* line 41, ../scss/components/_multimedia.scss */
+  .multimedia__title-section {
+    font-size: 48px;
+    line-height: 40px;
+    margin-top: 30px;
+    width: 832px;
+  }
+  /* line 47, ../scss/components/_multimedia.scss */
+  .multimedia__content {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-left: -25px;
+    padding-top: 108px;
   }
-  /* line 38, ../scss/components/_promotions.scss */
-  .promotions .container .content .content-media video {
-    max-width: 80%;
+  /* line 53, ../scss/components/_multimedia.scss */
+  .multimedia__media {
+    width: 738px;
   }
-  /* line 42, ../scss/components/_promotions.scss */
-  .promotions .container .content .list {
+  /* line 56, ../scss/components/_multimedia.scss */
+  .multimedia__media video {
+    max-width: 100%;
+  }
+  /* line 61, ../scss/components/_multimedia.scss */
+  .multimedia__list {
     display: block;
     list-style: disc;
-    margin-top: 80px;
     font-family: "Rufina", serif;
-    font-size: 30px;
-    width: 215px;
+    font-size: 36px;
+    line-height: 53px;
+    margin-left: 220px;
+    margin-top: 51px;
+    padding-bottom: 50px;
+    width: 258px;
   }
 }
 /* line 1, ../scss/components/_banner.scss */
@@ -1342,276 +1418,377 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 3, ../scss/components/_banner.scss */
 .banner .container {
+  align-items: center;
   display: flex;
   flex-direction: column;
+}
+/* line 9, ../scss/components/_banner.scss */
+.banner__part1-title-page {
+  display: none;
+}
+/* line 12, ../scss/components/_banner.scss */
+.banner__part1 img {
+  display: none;
+}
+/* line 16, ../scss/components/_banner.scss */
+.banner__part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-/* line 8, ../scss/components/_banner.scss */
-.banner .container .title-page {
-  display: none;
+/* line 21, ../scss/components/_banner.scss */
+.banner__part2-title-section {
+  color: #1D1B7A;
+  font-size: 38px;
+  line-height: 47px;
+  padding-top: 50px;
+  text-align: center;
+  width: 314px;
 }
-/* line 11, ../scss/components/_banner.scss */
-.banner .container img {
-  display: none;
+/* line 29, ../scss/components/_banner.scss */
+.banner__part2 button {
+  padding-bottom: 20px;
 }
 
-@media (min-width: 960px) {
-  /* line 17, ../scss/components/_banner.scss */
+@media (min-width: 1440px) {
+  /* line 35, ../scss/components/_banner.scss */
   .banner {
     background: #324AA0;
   }
-  /* line 19, ../scss/components/_banner.scss */
+  /* line 37, ../scss/components/_banner.scss */
   .banner .container {
     display: flex;
     flex-direction: row;
-    background: #324AA0;
-    padding-left: 200px;
-    width: 100%;
-  }
-  /* line 25, ../scss/components/_banner.scss */
-  .banner .container .banner__part-1 {
-    text-align: center;
-    margin-top: 30px;
-    display: flex;
     align-items: center;
-    flex-direction: column;
   }
-  /* line 31, ../scss/components/_banner.scss */
-  .banner .container .banner__part-1 .title-page {
+  /* line 42, ../scss/components/_banner.scss */
+  .banner__part1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 202px;
+    text-align: center;
+  }
+  /* line 50, ../scss/components/_banner.scss */
+  .banner__part1-title-page {
     color: #ffffff;
     display: block;
     font-family: "Redressed", "cursive";
-    font-size: 40px;
+    font-size: 98px;
+    margin-left: 5px;
+    margin-top: 25px;
   }
-  /* line 37, ../scss/components/_banner.scss */
-  .banner .container .banner__part-1 img {
-    margin-top: 30px;
+  /* line 58, ../scss/components/_banner.scss */
+  .banner__part1 img {
     display: block;
-    max-width: 100%;
-    width: auto;
     height: auto;
     margin-bottom: 50px;
+    max-width: 100%;
+    width: auto;
   }
-  /* line 46, ../scss/components/_banner.scss */
-  .banner .container .banner__part-2 {
-    margin-left: 100px;
-    display: flex;
+  /* line 66, ../scss/components/_banner.scss */
+  .banner__part2 {
     align-items: center;
+    display: flex;
     flex-direction: column;
-  }
-  /* line 51, ../scss/components/_banner.scss */
-  .banner .container .banner__part-2 .title-section {
-    color: #ffffff;
-    text-align: center;
-    width: 300px;
-  }
-}
-@media (min-width: 1440px) {
-  /* line 64, ../scss/components/_banner.scss */
-  .banner .container .banner__part-1 .title-page {
-    color: #ffffff;
-    display: block;
-    font-family: "Redressed", "cursive";
-    font-size: 40px;
-  }
-  /* line 71, ../scss/components/_banner.scss */
-  .banner .container .banner__part-2 {
-    margin-left: 250px;
+    margin-left: 194px;
+    margin-top: 14px;
   }
   /* line 73, ../scss/components/_banner.scss */
-  .banner .container .banner__part-2 .title-section {
+  .banner__part2-title-section {
     color: #ffffff;
+    font-size: 50px;
+    line-height: 57px;
+    padding-top: 15px;
     text-align: center;
-    width: 300px;
+    width: 341px;
+  }
+  /* line 81, ../scss/components/_banner.scss */
+  .banner__part2 button {
+    font-size: 36px;
+    margin-top: 65px;
+    height: 77px;
+    width: 287px;
   }
 }
-/* line 1, ../scss/components/_cities.scss */
-.cities {
+/* line 1, ../scss/components/_grid.scss */
+.grid {
   background: #4469EA;
-  margin-top: 20px;
 }
-/* line 6, ../scss/components/_cities.scss */
-.cities .container .title-section {
-  color: #ffffff;
-  padding-top: 20px;
-}
-/* line 10, ../scss/components/_cities.scss */
-.cities .container .cities__galeria {
+/* line 3, ../scss/components/_grid.scss */
+.grid .container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  padding-bottom: 50px;
 }
-/* line 15, ../scss/components/_cities.scss */
-.cities .container .cities__galeria.only-desktop {
+/* line 9, ../scss/components/_grid.scss */
+.grid__title-section {
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 34px;
+  padding-top: 50px;
+  text-align: center;
+  width: 314px;
+}
+/* line 17, ../scss/components/_grid.scss */
+.grid__galeria {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+/* line 23, ../scss/components/_grid.scss */
+.grid__galeria.only-desktop {
   display: none;
 }
-/* line 18, ../scss/components/_cities.scss */
-.cities .container .cities__galeria picture {
+/* line 26, ../scss/components/_grid.scss */
+.grid__galeria picture {
   max-width: 100%;
   width: auto;
   height: auto;
 }
+/* line 32, ../scss/components/_grid.scss */
+.grid__description {
+  color: #ffffff;
+  font-family: "Rufina", serif;
+  font-size: 24px;
+  line-height: 22px;
+  padding-top: 42px;
+  text-align: center;
+  width: 314px;
+}
+/* line 40, ../scss/components/_grid.scss */
+.grid__description p {
+  margin-bottom: 0;
+}
 
 @media (min-width: 960px) {
-  /* line 30, ../scss/components/_cities.scss */
+  /* line 47, ../scss/components/_grid.scss */
   .cities .container {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  /* line 34, ../scss/components/_cities.scss */
+  /* line 51, ../scss/components/_grid.scss */
   .cities .container .title-section {
     width: 800px;
   }
-  /* line 38, ../scss/components/_cities.scss */
+  /* line 55, ../scss/components/_grid.scss */
   .cities .container .cities__galeria {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  /* line 42, ../scss/components/_cities.scss */
+  /* line 59, ../scss/components/_grid.scss */
   .cities .container .cities__galeria.only-ipad {
     display: flex;
   }
-  /* line 45, ../scss/components/_cities.scss */
+  /* line 62, ../scss/components/_grid.scss */
   .cities .container .cities__galeria .cities__description {
     width: 500px;
   }
 }
-@media (min-width: 960px) {
-  /* line 55, ../scss/components/_cities.scss */
-  .cities .container .grilla-1 {
+@media (min-width: 1440px) {
+  /* line 70, ../scss/components/_grid.scss */
+  .grid {
+    padding-bottom: 53px;
+  }
+  /* line 72, ../scss/components/_grid.scss */
+  .grid__title-section {
+    font-size: 48px;
+    margin-top: 39px;
+    line-height: 44px;
+    text-align: center;
+    width: 1070px;
+  }
+  /* line 80, ../scss/components/_grid.scss */
+  .grid__galeria {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: columnx;
   }
-  /* line 59, ../scss/components/_cities.scss */
-  .cities .container .grilla-1 .cities__description {
-    width: 450px;
+  /* line 84, ../scss/components/_grid.scss */
+  .grid__galeria img {
+    margin-top: 23px;
+    height: 350px;
+    width: 350px;
   }
-  /* line 63, ../scss/components/_cities.scss */
-  .cities .container .grilla-2 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-  /* line 67, ../scss/components/_cities.scss */
-  .cities .container .grilla-2 .cities__galeria {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  /* line 71, ../scss/components/_cities.scss */
-  .cities .container .grilla-2 .cities__galeria.only-desktop {
-    display: flex;
-  }
-  /* line 74, ../scss/components/_cities.scss */
-  .cities .container .grilla-2 .cities__galeria .cities__description {
+  /* line 90, ../scss/components/_grid.scss */
+  .grid__description {
+    margin-bottom: -22px;
+    padding-top: 28px;
     width: 450px;
   }
 }
-/* line 3, ../scss/components/_contact.scss */
-.contact .container .form-group {
+/* line 2, ../scss/components/_contact.scss */
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 7, ../scss/components/_contact.scss */
+.contact__title-section {
+  color: #1D1B7A;
+  font-size: 34px;
+  line-height: 40px;
+  padding-top: 48px;
+  text-align: center;
+  width: 314px;
+}
+/* line 15, ../scss/components/_contact.scss */
+.contact__form-group {
   color: #000000;
   display: flex;
   flex-direction: column;
   font-family: "Rufina", serif;
-  margin-top: 15px;
+  padding-top: 25px;
 }
-/* line 10, ../scss/components/_contact.scss */
-.contact .container .form-group input {
+/* line 21, ../scss/components/_contact.scss */
+.contact__form-group label {
+  color: #1D1B7A;
+  font-size: 24px;
+  padding-bottom: 24px;
+}
+/* line 26, ../scss/components/_contact.scss */
+.contact__form-group input {
   border: 2px solid #1D1B7A;
   border-radius: 50px;
   box-sizing: border-box;
   font-family: "Rufina", serif;
   height: 38px;
 }
-/* line 17, ../scss/components/_contact.scss */
-.contact .container .form-group .form-actions {
+/* line 34, ../scss/components/_contact.scss */
+.contact__form-actions {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5px;
+  padding-top: 23px;
 }
 
 @media (min-width: 960px) {
-  /* line 27, ../scss/components/_contact.scss */
+  /* line 46, ../scss/components/_contact.scss */
   .contact .container {
     padding: 0 200px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 34, ../scss/components/_contact.scss */
+  /* line 52, ../scss/components/_contact.scss */
+  .contact {
+    padding-bottom: 4px;
+  }
+  /* line 54, ../scss/components/_contact.scss */
   .contact .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  /* line 38, ../scss/components/_contact.scss */
-  .contact .container .title-section {
+  /* line 59, ../scss/components/_contact.scss */
+  .contact__title-section {
+    font-size: 48px;
+    line-height: 55px;
     text-align: left;
-    width: 360px;
+    padding-top: 75px;
+    width: 564px;
   }
-  /* line 42, ../scss/components/_contact.scss */
-  .contact .container .form-group {
+  /* line 66, ../scss/components/_contact.scss */
+  .contact__form-group {
+    margin-top: 10px;
     width: 500px;
   }
-  /* line 45, ../scss/components/_contact.scss */
-  .contact .container aside {
-    display: block;
-    flex-direction: column;
-    margin-left: 180px;
+  /* line 69, ../scss/components/_contact.scss */
+  .contact__form-group label {
+    padding-bottom: 37px;
+    padding-top: 13px;
+  }
+  /* line 73, ../scss/components/_contact.scss */
+  .contact__form-group input {
+    font-size: 18px;
+    height: 57px;
+    width: 564px;
+  }
+  /* line 79, ../scss/components/_contact.scss */
+  .contact__form-actions {
+    align-items: flex-start;
+    padding-top: 55px;
+    padding-bottom: 20px;
+  }
+  /* line 83, ../scss/components/_contact.scss */
+  .contact__form-actions button {
+    font-size: 36px;
+    height: 84px;
+    width: 280px;
   }
 }
-/* line 1, ../scss/components/_aside.scss */
-aside {
-  display: none;
-}
-
-/* line 1, ../scss/components/_supermarkets.scss */
-.supermarkets {
+/* line 1, ../scss/components/_agreements.scss */
+.agreements {
   background: #4469EA;
 }
-/* line 3, ../scss/components/_supermarkets.scss */
-.supermarkets .container {
-  color: #ffffff;
-  font-family: "Rufina", serif;
-  font-size: 22px;
+/* line 3, ../scss/components/_agreements.scss */
+.agreements .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* line 8, ../scss/components/_supermarkets.scss */
-.supermarkets .container .title-section {
+/* line 8, ../scss/components/_agreements.scss */
+.agreements__title-section {
   color: #ffffff;
+  font-size: 34px;
+  line-height: 48px;
+  padding-top: 50px;
+  text-align: center;
+  width: 314px;
 }
-/* line 11, ../scss/components/_supermarkets.scss */
-.supermarkets .container picture {
+/* line 16, ../scss/components/_agreements.scss */
+.agreements picture {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding-top: 44px;
 }
-/* line 16, ../scss/components/_supermarkets.scss */
-.supermarkets .container .supermarkets__topinfo {
-  margin-top: 20px;
-}
-/* line 19, ../scss/components/_supermarkets.scss */
-.supermarkets .container .btn-link {
+/* line 22, ../scss/components/_agreements.scss */
+.agreements__info {
   color: #ffffff;
-  font-size: 16px;
+  font-family: "Rufina", serif;
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 50px;
+  width: 314px;
+}
+/* line 30, ../scss/components/_agreements.scss */
+.agreements__topinfo {
+  padding-top: 50px;
+}
+/* line 33, ../scss/components/_agreements.scss */
+.agreements ul {
+  list-style: disc;
+  padding-left: 37px;
+  padding-bottom: 30px;
+}
+/* line 38, ../scss/components/_agreements.scss */
+.agreements .btn-link {
+  color: #ffffff;
+  font-size: 22px;
+  padding-left: 195px;
 }
 
 @media (min-width: 960px) {
-  /* line 28, ../scss/components/_supermarkets.scss */
+  /* line 47, ../scss/components/_agreements.scss */
   .supermarkets .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  /* line 33, ../scss/components/_supermarkets.scss */
+  /* line 52, ../scss/components/_agreements.scss */
   .supermarkets .container .title-section {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  /* line 37, ../scss/components/_supermarkets.scss */
+  /* line 56, ../scss/components/_agreements.scss */
   .supermarkets .container .supermarkets__info {
     display: flex;
     justify-content: space-between;
@@ -1619,43 +1796,89 @@ aside {
     width: 100%;
     padding: 50px 200px;
   }
-  /* line 43, ../scss/components/_supermarkets.scss */
+  /* line 62, ../scss/components/_agreements.scss */
   .supermarkets .container .supermarkets__info .supermarkets__topinfo {
     width: 350px;
     margin-top: 0;
   }
-  /* line 47, ../scss/components/_supermarkets.scss */
+  /* line 66, ../scss/components/_agreements.scss */
   .supermarkets .container .supermarkets__info ul {
     list-style: disc;
   }
-  /* line 50, ../scss/components/_supermarkets.scss */
+  /* line 69, ../scss/components/_agreements.scss */
   .supermarkets .container .supermarkets__info .supermarkets__link {
     display: none;
   }
 }
 @media (min-width: 1440px) {
-  /* line 61, ../scss/components/_supermarkets.scss */
-  .supermarkets .container .supermarkets__content {
+  /* line 79, ../scss/components/_agreements.scss */
+  .agreements__title-section {
+    font-size: 48px;
+    margin-top: 15px;
+    text-align: center;
+    width: 656px;
+  }
+  /* line 85, ../scss/components/_agreements.scss */
+  .agreements__content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
-  /* line 65, ../scss/components/_supermarkets.scss */
-  .supermarkets .container .supermarkets__content img {
+  /* line 89, ../scss/components/_agreements.scss */
+  .agreements__content img {
     margin-left: 260px;
+    height: 450px;
+    width: 450px;
+    padding-bottom: 50px;
   }
-  /* line 68, ../scss/components/_supermarkets.scss */
-  .supermarkets .container .supermarkets__content .supermarkets__info {
+  /* line 96, ../scss/components/_agreements.scss */
+  .agreements__info {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     text-align: left;
     padding: 40px 0px;
   }
-  /* line 74, ../scss/components/_supermarkets.scss */
-  .supermarkets .container .supermarkets__content .supermarkets__info .supermarkets__link {
+  /* line 103, ../scss/components/_agreements.scss */
+  .agreements__topinfo {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  /* line 107, ../scss/components/_agreements.scss */
+  .agreements__link {
     display: flex;
+    font-size: 28px;
     margin-top: 30px;
     margin-left: 200px;
+  }
+}
+/* line 1, ../scss/components/_aside.scss */
+aside {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  /* line 5, ../scss/components/_aside.scss */
+  aside {
+    display: block;
+    flex-direction: column;
+    margin-left: 150px;
+  }
+  /* line 9, ../scss/components/_aside.scss */
+  aside .subtitle-section {
+    color: #1D1B7A;
+    font-size: 42px;
+    line-height: 50px;
+    margin-left: 26px;
+    margin-top: -8px;
+    text-align: center;
+    width: 476px;
+  }
+  /* line 18, ../scss/components/_aside.scss */
+  aside img {
+    padding-top: px;
+    margin-left: 10px;
+    width: 518px;
+    height: 417px;
   }
 }
