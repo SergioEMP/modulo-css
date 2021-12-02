@@ -5,88 +5,87 @@
         align-items: center;
         display: flex;
         flex-direction: column;
+    }
+    &__part1{
+        &-title-page{
+            display: none;
         }
-        &__part1{
-            &-title-page{
-                display: none;
+        img{
+            display: none;
+        }
+    }
+    &__part2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            &-title-section{
+                color: color(primary,dark);
+                font-size: 38px;
+                line-height: 47px; 
+                padding-top: 50px;
+                text-align: center;
+                width: 314px;
             }
-            img{
-                display: none;
-                }
-        }
-        &__part2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-                &-title-section{
-                    color: color(primary,dark);
-                    font-size: 38px;
-                    line-height: 47px; 
-                    padding-top: 50px;
-                    text-align: center;
-                    width: 314px;
-                }
-                button{
-                    padding-bottom: 20px;
-                }
+            button{
+                padding-bottom: 20px;
             }
-        }
+    }
+}
 @include mq-min(xl){
     .banner{
-        margin-top: 0;
         background: color(complementary,five);
+        margin-top: 0;
         .container{
+        align-items: center;
         display: flex;
         flex-direction:row;
-        align-items: center;
         }
-            &__part1{
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin-top: 30px;
-                margin-left:202px ;
-                text-align: center;
-                
-                &-title-page{
-                    color:color(grayscale,white);
-                    display: block;
-                    font-family: $font-header;
-                    font-size: 98px;
-                    margin-left: 10px;
-                    margin-top: 25px;
-                }
-                img{
-                    display: block;
-                    height: auto;
-                    margin-bottom: 50px;
-                    margin-top: 22px;
-                    max-width: 100%;
-                    width: auto;
-                }
-            }    
-            &__part2{
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin-left: 194px;
-                margin-top: 14px;
-                
-                &-title-section{
+        &__part1{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-left:202px ;
+            margin-top: 30px;
+            text-align: center;
+            &-title-page{
                 color:color(grayscale,white);
-                font-size: 50px;
-                line-height: 57px;
-                padding-top:20px;
-                text-align: center;
-                width: 341px;
-                }
-                button{
-                    font-size: 36px;
-                    margin-top: 65px;
-                    height: 77px;
-                    width: 287px;
-                }
+                display: block;
+                font-family: $font-header;
+                font-size: 98px;
+                margin-left: 10px;
+                margin-top: 25px;
             }
+            img{
+                display: block;
+                height: auto;
+                margin-bottom: 50px;
+                margin-top: 22px;
+                max-width: 100%;
+                width: auto;
+            }
+        }    
+        &__part2{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: 194px;
+            margin-top: 14px;
+            
+            &-title-section{
+            color:color(grayscale,white);
+            font-size: 50px;
+            line-height: 57px;
+            padding-top:20px;
+            text-align: center;
+            width: 341px;
+            }
+            button{
+                font-size: 36px;
+                height: 77px;
+                margin-top: 65px;
+                width: 287px;
+            }
+        }
     }
 }  

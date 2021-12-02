@@ -296,14 +296,15 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   }
 }
 
-/* line 19, ../scss/base/_grid.scss */
+/* line 18, ../scss/base/_grid.scss */
 .grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 550px);
   grid-gap: 1rem;
 }
 @media (max-width: 539px) {
-  /* line 19, ../scss/base/_grid.scss */
+  /* line 18, ../scss/base/_grid.scss */
   .grid {
     grid-gap: 0;
   }
@@ -914,12 +915,13 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   justify-content: center;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
-/* line 11, ../scss/components/_header.scss */
+/* line 13, ../scss/components/_header.scss */
 .header__menu-navbar {
   display: none;
 }
-/* line 15, ../scss/components/_header.scss */
+/* line 17, ../scss/components/_header.scss */
 .header__bar {
   align-items: center;
   display: flex;
@@ -928,63 +930,63 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   justify-content: space-between;
   width: 100%;
 }
-/* line 22, ../scss/components/_header.scss */
+/* line 24, ../scss/components/_header.scss */
 .header__bar img {
   height: 4rem;
   margin-left: 1.5rem;
   width: 5rem;
 }
-/* line 27, ../scss/components/_header.scss */
+/* line 29, ../scss/components/_header.scss */
 .header__bar-title-header {
-  font-family: "Redressed", "cursive";
   color: #ffffff;
+  font-family: "Redressed", "cursive";
   font-size: 42px;
 }
-/* line 32, ../scss/components/_header.scss */
+/* line 34, ../scss/components/_header.scss */
 .header__bar-bar-icon {
   font-size: 8rem;
 }
 
 @media (min-width: 960px) {
-  /* line 38, ../scss/components/_header.scss */
+  /* line 40, ../scss/components/_header.scss */
   .header {
+    align-items: center;
     background-color: #E6E8FB;
     padding: 2rem;
-    width: fit-content;
-    align-items: center;
     position: absolute;
     position: fixed;
-  }
-  /* line 46, ../scss/components/_header.scss */
-  .header__menu-navbar {
-    margin-left: 2rem;
-    display: flex;
-    display: block;
-    list-style: none;
     width: fit-content;
-    justify-content: space-between;
   }
-  /* line 53, ../scss/components/_header.scss */
+  /* line 48, ../scss/components/_header.scss */
+  .header__menu-navbar {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 2rem;
+    width: fit-content;
+  }
+  /* line 55, ../scss/components/_header.scss */
   .header__menu-navbar span {
     font-size: 6rem;
   }
-  /* line 56, ../scss/components/_header.scss */
+  /* line 58, ../scss/components/_header.scss */
   .header__menu-navbar-icon {
     font-size: 12rem;
   }
-  /* line 61, ../scss/components/_header.scss */
+  /* line 63, ../scss/components/_header.scss */
   .header__bar {
     display: none;
   }
 }
 @media (min-width: 1440px) {
-  /* line 67, ../scss/components/_header.scss */
+  /* line 69, ../scss/components/_header.scss */
   .header {
+    align-items: center;
     background-color: #E6E8FB;
     padding: 2rem;
-    width: fit-content;
-    align-items: center;
     position: absolute;
+    width: fit-content;
   }
 }
 /* line 2, ../scss/components/_footer.scss */
@@ -1012,16 +1014,16 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   height: 35px;
   width: 35px;
 }
-/* line 24, ../scss/components/_footer.scss */
+/* line 23, ../scss/components/_footer.scss */
 .footer__info {
   padding-top: 14px;
   text-align: center;
 }
-/* line 27, ../scss/components/_footer.scss */
+/* line 26, ../scss/components/_footer.scss */
 .footer__info .direction {
   color: #666666;
 }
-/* line 31, ../scss/components/_footer.scss */
+/* line 30, ../scss/components/_footer.scss */
 .footer__copyright {
   padding-bottom: 50px;
   padding-top: 10px;
@@ -1029,7 +1031,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 @media (min-width: 1440px) {
-  /* line 40, ../scss/components/_footer.scss */
+  /* line 38, ../scss/components/_footer.scss */
   .footer .container {
     display: flex;
     justify-content: space-between;
@@ -1039,33 +1041,33 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     padding-right: 70px;
     height: 205px;
   }
-  /* line 49, ../scss/components/_footer.scss */
+  /* line 47, ../scss/components/_footer.scss */
   .footer__redes {
     font-size: 48px;
     padding-top: 0px;
     width: 180px;
   }
-  /* line 53, ../scss/components/_footer.scss */
+  /* line 51, ../scss/components/_footer.scss */
   .footer__redes img {
     height: 48px;
     justify-content: center;
     width: 48px;
   }
-  /* line 59, ../scss/components/_footer.scss */
+  /* line 57, ../scss/components/_footer.scss */
   .footer__info {
     font-size: 24px;
     text-align: center;
   }
-  /* line 62, ../scss/components/_footer.scss */
+  /* line 60, ../scss/components/_footer.scss */
   .footer__info .direccion {
     color: #666666;
   }
-  /* line 66, ../scss/components/_footer.scss */
+  /* line 64, ../scss/components/_footer.scss */
   .footer__copyright {
     font-size: 24px;
     padding-bottom: 28px;
   }
-  /* line 69, ../scss/components/_footer.scss */
+  /* line 67, ../scss/components/_footer.scss */
   .footer__copyright p {
     margin-bottom: 0px;
   }
@@ -1172,10 +1174,10 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 17, ../scss/components/_banner.scss */
 .banner__part2 {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 /* line 22, ../scss/components/_banner.scss */
 .banner__part2-title-section {
@@ -1194,25 +1196,25 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 @media (min-width: 1440px) {
   /* line 36, ../scss/components/_banner.scss */
   .banner {
-    margin-top: 0;
     background: #324AA0;
+    margin-top: 0;
   }
   /* line 39, ../scss/components/_banner.scss */
   .banner .container {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
   /* line 44, ../scss/components/_banner.scss */
   .banner__part1 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
     margin-left: 202px;
+    margin-top: 30px;
     text-align: center;
   }
-  /* line 52, ../scss/components/_banner.scss */
+  /* line 51, ../scss/components/_banner.scss */
   .banner__part1-title-page {
     color: #ffffff;
     display: block;
@@ -1221,7 +1223,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-left: 10px;
     margin-top: 25px;
   }
-  /* line 60, ../scss/components/_banner.scss */
+  /* line 59, ../scss/components/_banner.scss */
   .banner__part1 img {
     display: block;
     height: auto;
@@ -1230,7 +1232,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     max-width: 100%;
     width: auto;
   }
-  /* line 69, ../scss/components/_banner.scss */
+  /* line 68, ../scss/components/_banner.scss */
   .banner__part2 {
     align-items: center;
     display: flex;
@@ -1238,7 +1240,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-left: 194px;
     margin-top: 14px;
   }
-  /* line 76, ../scss/components/_banner.scss */
+  /* line 75, ../scss/components/_banner.scss */
   .banner__part2-title-section {
     color: #ffffff;
     font-size: 50px;
@@ -1247,27 +1249,27 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 341px;
   }
-  /* line 84, ../scss/components/_banner.scss */
+  /* line 83, ../scss/components/_banner.scss */
   .banner__part2 button {
     font-size: 36px;
-    margin-top: 65px;
     height: 77px;
+    margin-top: 65px;
     width: 287px;
   }
 }
-/* line 1, ../scss/components/_grid.scss */
-.grid {
+/* line 1, ../scss/components/_card.scss */
+.card {
   background: #4469EA;
 }
-/* line 3, ../scss/components/_grid.scss */
-.grid .container {
+/* line 3, ../scss/components/_card.scss */
+.card .container {
   align-items: center;
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
 }
-/* line 9, ../scss/components/_grid.scss */
-.grid__title-section {
+/* line 9, ../scss/components/_card.scss */
+.card__title-section {
   color: #ffffff;
   font-size: 34px;
   line-height: 34px;
@@ -1275,25 +1277,25 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 314px;
 }
-/* line 17, ../scss/components/_grid.scss */
-.grid__galeria {
+/* line 17, ../scss/components/_card.scss */
+.card__galeria {
   align-items: center;
   display: flex;
   flex-direction: column;
   padding-top: 64px;
 }
-/* line 23, ../scss/components/_grid.scss */
-.grid__galeria.only-desktop {
+/* line 22, ../scss/components/_card.scss */
+.card__galeria.only-desktop {
   display: none;
 }
-/* line 26, ../scss/components/_grid.scss */
-.grid__galeria picture {
+/* line 25, ../scss/components/_card.scss */
+.card__galeria picture {
+  height: auto;
   max-width: 100%;
   width: auto;
-  height: auto;
 }
-/* line 32, ../scss/components/_grid.scss */
-.grid__description {
+/* line 31, ../scss/components/_card.scss */
+.card__description {
   color: #ffffff;
   font-family: "Rufina", serif;
   font-size: 24px;
@@ -1302,64 +1304,74 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 314px;
 }
-/* line 40, ../scss/components/_grid.scss */
-.grid__description p {
+/* line 39, ../scss/components/_card.scss */
+.card__description p {
   margin-bottom: 0;
 }
 
 @media (min-width: 960px) {
-  /* line 47, ../scss/components/_grid.scss */
-  .cities .container {
+  /* line 46, ../scss/components/_card.scss */
+  .card .container {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  /* line 51, ../scss/components/_grid.scss */
-  .cities .container .title-section {
+  /* line 50, ../scss/components/_card.scss */
+  .card .container .title-section {
     width: 800px;
   }
-  /* line 55, ../scss/components/_grid.scss */
-  .cities .container .cities__galeria {
+  /* line 54, ../scss/components/_card.scss */
+  .card .container__galeria {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  /* line 59, ../scss/components/_grid.scss */
-  .cities .container .cities__galeria.only-ipad {
+  /* line 58, ../scss/components/_card.scss */
+  .card .container__galeria.only-ipad {
     display: flex;
   }
-  /* line 62, ../scss/components/_grid.scss */
-  .cities .container .cities__galeria .cities__description {
+  /* line 61, ../scss/components/_card.scss */
+  .card .container__galeria .cities__description {
     width: 500px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 70, ../scss/components/_grid.scss */
-  .grid {
+  /* line 69, ../scss/components/_card.scss */
+  .card {
     padding-bottom: 53px;
   }
-  /* line 72, ../scss/components/_grid.scss */
-  .grid__title-section {
+  /* line 71, ../scss/components/_card.scss */
+  .card__title-section {
     font-size: 48px;
     margin-top: 39px;
     line-height: 44px;
     text-align: center;
     width: 1070px;
   }
-  /* line 80, ../scss/components/_grid.scss */
-  .grid__galeria {
-    display: flex;
+  /* line 78, ../scss/components/_card.scss */
+  .card__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 515px);
+  }
+  /* line 83, ../scss/components/_card.scss */
+  .card__galeria {
     align-items: center;
+    display: flex;
     flex-direction: columnx;
   }
-  /* line 84, ../scss/components/_grid.scss */
-  .grid__galeria img {
-    margin-top: 23px;
+  /* line 87, ../scss/components/_card.scss */
+  .card__galeria.only-desktop {
+    display: flex;
+  }
+  /* line 90, ../scss/components/_card.scss */
+  .card__galeria img {
     height: 350px;
+    margin-top: 23px;
     width: 350px;
   }
-  /* line 90, ../scss/components/_grid.scss */
-  .grid__description {
+  /* line 96, ../scss/components/_card.scss */
+  .card__description {
     margin-bottom: -22px;
     padding-top: 28px;
     width: 450px;
@@ -1367,9 +1379,9 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 2, ../scss/components/_contact.scss */
 .contact .container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 /* line 7, ../scss/components/_contact.scss */
 .contact__title-section {
@@ -1412,19 +1424,19 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 @media (min-width: 960px) {
-  /* line 46, ../scss/components/_contact.scss */
+  /* line 44, ../scss/components/_contact.scss */
   .contact .container {
     padding: 0 200px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 53, ../scss/components/_contact.scss */
+  /* line 51, ../scss/components/_contact.scss */
   .contact .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  /* line 58, ../scss/components/_contact.scss */
+  /* line 56, ../scss/components/_contact.scss */
   .contact__title-section {
     font-size: 48px;
     line-height: 55px;
@@ -1432,29 +1444,29 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     padding-top: 75px;
     width: 564px;
   }
-  /* line 65, ../scss/components/_contact.scss */
+  /* line 63, ../scss/components/_contact.scss */
   .contact__form-group {
     margin-top: 10px;
     width: 500px;
   }
-  /* line 68, ../scss/components/_contact.scss */
+  /* line 66, ../scss/components/_contact.scss */
   .contact__form-group label {
     padding-bottom: 37px;
     padding-top: 13px;
   }
-  /* line 72, ../scss/components/_contact.scss */
+  /* line 70, ../scss/components/_contact.scss */
   .contact__form-group input {
     font-size: 18px;
     height: 57px;
     width: 564px;
   }
-  /* line 78, ../scss/components/_contact.scss */
+  /* line 76, ../scss/components/_contact.scss */
   .contact__form-actions {
     align-items: flex-start;
     padding-top: 55px;
     padding-bottom: 20px;
   }
-  /* line 82, ../scss/components/_contact.scss */
+  /* line 80, ../scss/components/_contact.scss */
   .contact__form-actions button {
     font-size: 36px;
     height: 84px;
@@ -1503,8 +1515,8 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 /* line 33, ../scss/components/_agreements.scss */
 .agreements ul {
   list-style: disc;
-  padding-left: 37px;
   padding-bottom: 30px;
+  padding-left: 37px;
 }
 /* line 38, ../scss/components/_agreements.scss */
 .agreements .btn-link {
@@ -1515,52 +1527,52 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 
 @media (min-width: 960px) {
   /* line 47, ../scss/components/_agreements.scss */
-  .supermarkets .container {
-    display: flex;
+  .ageements .container {
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
   }
-  /* line 52, ../scss/components/_agreements.scss */
-  .supermarkets .container .title-section {
-    padding-top: 20px;
+  /* line 53, ../scss/components/_agreements.scss */
+  .ageements__title-section {
     padding-bottom: 20px;
+    padding-top: 20px;
   }
-  /* line 56, ../scss/components/_agreements.scss */
-  .supermarkets .container .supermarkets__info {
+  /* line 57, ../scss/components/_agreements.scss */
+  .ageements__info {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    width: 100%;
     padding: 50px 200px;
+    width: 100%;
   }
-  /* line 62, ../scss/components/_agreements.scss */
-  .supermarkets .container .supermarkets__info .supermarkets__topinfo {
-    width: 350px;
+  /* line 63, ../scss/components/_agreements.scss */
+  .ageements__info__topinfo {
     margin-top: 0;
+    width: 350px;
   }
-  /* line 66, ../scss/components/_agreements.scss */
-  .supermarkets .container .supermarkets__info ul {
+  /* line 67, ../scss/components/_agreements.scss */
+  .ageements__info ul {
     list-style: disc;
   }
-  /* line 69, ../scss/components/_agreements.scss */
-  .supermarkets .container .supermarkets__info .supermarkets__link {
+  /* line 70, ../scss/components/_agreements.scss */
+  .ageements__info .supermarkets__link {
     display: none;
   }
 }
 @media (min-width: 1440px) {
-  /* line 78, ../scss/components/_agreements.scss */
+  /* line 77, ../scss/components/_agreements.scss */
   .agreements {
     padding-bottom: 30px;
   }
-  /* line 80, ../scss/components/_agreements.scss */
+  /* line 79, ../scss/components/_agreements.scss */
   .agreements__title-section {
     font-size: 48px;
     margin-top: 15px;
     text-align: center;
     width: 656px;
   }
-  /* line 86, ../scss/components/_agreements.scss */
+  /* line 85, ../scss/components/_agreements.scss */
   .agreements__content {
     align-items: center;
     display: flex;
@@ -1570,14 +1582,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     padding-right: 185px;
     width: 100%;
   }
-  /* line 95, ../scss/components/_agreements.scss */
+  /* line 94, ../scss/components/_agreements.scss */
   .agreements img {
-    margin-top: 23px;
     height: 450px;
     margin-left: 378px;
+    margin-top: 23px;
     width: 450px;
   }
-  /* line 101, ../scss/components/_agreements.scss */
+  /* line 100, ../scss/components/_agreements.scss */
   .agreements__info {
     display: flex;
     flex-direction: column;
@@ -1587,24 +1599,24 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     padding: 40px 0px;
     text-align: left;
   }
-  /* line 109, ../scss/components/_agreements.scss */
+  /* line 108, ../scss/components/_agreements.scss */
   .agreements__info ul {
     line-height: 44px;
-    margin-top: 36px;
     margin-left: 12px;
+    margin-top: 36px;
   }
-  /* line 115, ../scss/components/_agreements.scss */
+  /* line 114, ../scss/components/_agreements.scss */
   .agreements__topinfo {
     line-height: 42px;
     width: 485px;
   }
-  /* line 119, ../scss/components/_agreements.scss */
+  /* line 118, ../scss/components/_agreements.scss */
   .agreements__link {
     display: flex;
     margin-left: 100px;
     width: 100%;
   }
-  /* line 124, ../scss/components/_agreements.scss */
+  /* line 123, ../scss/components/_agreements.scss */
   .agreements__link .btn-link {
     font-size: 28px;
   }
@@ -1633,9 +1645,8 @@ aside {
   }
   /* line 18, ../scss/components/_aside.scss */
   aside img {
-    padding-top: px;
+    height: 417px;
     margin-left: 10px;
     width: 518px;
-    height: 417px;
   }
 }

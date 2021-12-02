@@ -5,72 +5,71 @@
         flex-direction: column;
         align-items: center;
     }
-        &__title-section{
-            color: color(grayscale,white);
-            font-size: 34px;
-            line-height: 48px;
-            padding-top: 50px;
-            text-align: center;
-            width: 314px;
+    &__title-section{
+        color: color(grayscale,white);
+        font-size: 34px;
+        line-height: 48px;
+        padding-top: 50px;
+        text-align: center;
+        width: 314px;
+    }
+    img{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 44px;
+    }
+    &__info{
+        color: color(grayscale,white);
+        font-family: $font-secondary;
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 50px;
+        width: 314px;
+    }
+    &__topinfo{
+        padding-top: 50px;
+    }
+    ul{
+        list-style: disc;
+        padding-bottom: 30px;
+        padding-left: 37px;
+    }
+    .btn-link{
+        color: color(grayscale,white);
+        font-size: 22px;
+        padding-left: 195px;
         }
-        img{
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            margin-top: 44px;
-        }
-        &__info{
-            color: color(grayscale,white);
-            font-family: $font-secondary;
-            font-size: 24px;
-            line-height: 30px;
-            padding-bottom: 50px;
-            width: 314px;
-        }
-        &__topinfo{
-            padding-top: 50px;
-        }
-        ul{
-            list-style: disc;
-            padding-left: 37px;
-            padding-bottom: 30px;
-        }
-        .btn-link{
-            color: color(grayscale,white);
-            font-size: 22px;
-            padding-left: 195px;
-            }
 }
 
 @include mq-min(lg){
-    .supermarkets{
+    .ageements{
         .container{
-            display: flex;
             align-items: center;
-            justify-content: center;
+            display: flex;
             flex-direction: column;
-            .title-section{
-                padding-top: 20px;
-                padding-bottom: 20px;
+            justify-content: center;
+        }   
+        &__title-section{
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 50px 200px;
+            width: 100%;
+            &__topinfo{
+                margin-top: 0;
+                width: 350px;
             }
-            .supermarkets__info{
-                display: flex;
-                justify-content: space-between;
-                margin-top: 30px;
-                width: 100%;
-                padding: 50px 200px;
-                .supermarkets__topinfo{
-                    width: 350px;
-                    margin-top: 0;
-                }
-                ul{
-                    list-style: disc;
-                }
-                .supermarkets__link{
-                    display: none;
-                }
+            ul{
+                list-style: disc;
             }
-
+            .supermarkets__link{
+                display: none;
+            }
         }
     }
 }
@@ -93,9 +92,9 @@
             width: 100%;
         }
             img{
-                margin-top: 23px;
                 height: 450px;
                 margin-left: 378px;
+                margin-top: 23px;
                 width: 450px;
             }
         &__info{
@@ -108,8 +107,8 @@
             text-align: left;
             ul{
                 line-height: 44px;
-                margin-top: 36px;
                 margin-left: 12px;
+                margin-top: 36px;
             }
         }
         &__topinfo{

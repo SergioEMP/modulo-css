@@ -6,34 +6,32 @@
         font-family: $font-secondary; 
         font-size: 22px;
     }
-        &__redes{
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 50px;
-        width: 179px;
-                    &-icons{
-                font-size: 48px;
-            }
+    &__redes{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 179px;
+        &-icons{
+            font-size: 48px;
         }
-        img{
-            height: 35px;
-            width: 35px;
-
+    }
+    img{
+        height: 35px;
+        width: 35px;
+    }
+    &__info{
+        padding-top: 14px;
+        text-align: center;
+        .direction{
+            color: color(grayscale, gray-5);
         }
-        &__info{
-            padding-top: 14px;
-            text-align: center;
-            .direction{
-                color: color(grayscale, gray-5);
-            }
-        }    
-        &__copyright{
-            padding-bottom: 50px;
-            padding-top: 10px;
-            text-align: center;
-        }    
-        
+    }    
+    &__copyright{
+        padding-bottom: 50px;
+        padding-top: 10px;
+        text-align: center;
+    }    
 }
 @include mq-min(xl){
     .footer{
@@ -46,29 +44,29 @@
             padding-right: 70px;
             height: 205px;
         }
-            &__redes{
-                font-size: 48px;
-                padding-top: 0px;
-                width: 180px;
-                img{
-                    height: 48px;
-                    justify-content: center;  
-                    width: 48px;
-                }
+        &__redes{
+            font-size: 48px;
+            padding-top: 0px;
+            width: 180px;
+            img{
+                height: 48px;
+                justify-content: center;  
+                width: 48px;
             }
-            &__info{
-                font-size: 24px;
-                text-align: center;
-                .direccion{
-                    color: color(grayscale, gray-5);
-                }
+        }
+        &__info{
+            font-size: 24px;
+            text-align: center;
+            .direccion{
+                color: color(grayscale, gray-5);
             }
-            &__copyright{
-                font-size: 24px;
-                padding-bottom: 28px;
-                p{
-                margin-bottom: 0px;
-                }
+        }
+        &__copyright{
+            font-size: 24px;
+            padding-bottom: 28px;
+            p{
+            margin-bottom: 0px;
             }
+        }
     }
 }

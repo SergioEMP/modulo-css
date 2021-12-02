@@ -1,4 +1,4 @@
-.grid{
+.card{
     background:color(primary,base);
     .container{       
         align-items: center;
@@ -6,44 +6,43 @@
         flex-direction: column;
         padding-bottom: 50px;
     }
-        &__title-section{
-            color: color(grayscale,white);
-            font-size: 34px;
-            line-height: 34px;
-            padding-top: 50px;
-            text-align: center;
-            width: 314px;
+    &__title-section{
+        color: color(grayscale,white);
+        font-size: 34px;
+        line-height: 34px;
+        padding-top: 50px;
+        text-align: center;
+        width: 314px;
+    }
+    &__galeria{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 64px;
+        &.only-desktop{
+            display: none;
         }
-        &__galeria{
-            
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            padding-top: 64px;
-            &.only-desktop{
-                display: none;
-            }
-            picture {
-                max-width: 100%;
-                width: auto;
-                height: auto;
-            }
-        }
-        &__description{
-            color: color(grayscale,white);
-            font-family: $font-secondary;
-            font-size: 24px;
-            line-height: 22px;
-            padding-top: 42px;
-            text-align: center;
-            width: 314px;
-            p{
-                margin-bottom: 0;
-            }
+        picture {
+            height: auto;
+            max-width: 100%;
+            width: auto;
         }
     }
+    &__description{
+        color: color(grayscale,white);
+        font-family: $font-secondary;
+        font-size: 24px;
+        line-height: 22px;
+        padding-top: 42px;
+        text-align: center;
+        width: 314px;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
 @include mq-min(lg){
-    .cities{
+    .card{
         .container{
             display: flex;
             align-items: center;
@@ -52,7 +51,7 @@
                 width:800px;
             }
 
-            .cities__galeria{
+            &__galeria{
                 display: flex;
                 align-items: center;
                 flex-direction:column ;
@@ -67,7 +66,7 @@
     }
 }
 @include mq-min(xl){
-    .grid{
+    .card{
         padding-bottom: 53px;
         &__title-section{
             font-size: 48px;
@@ -75,15 +74,22 @@
             line-height: 44px;
             text-align: center;
             width: 1070px;
-
         }
+        &__grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 515px);
+            }
         &__galeria{
-            display: flex;
             align-items: center;
+            display: flex;
             flex-direction:columnx ;
+            &.only-desktop{
+                display: flex;
+            }
             img{
-                margin-top: 23px;
                 height: 350px;
+                margin-top: 23px;
                 width: 350px;
             }
         }
@@ -92,6 +98,6 @@
             padding-top: 28px;
             width: 450px;
         } 
-        
     }
 }
+
