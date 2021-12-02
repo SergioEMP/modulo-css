@@ -13,11 +13,11 @@
             text-align: center;
             width: 314px;
         }
-        picture{
+        img{
             align-items: center;
             display: flex;
             flex-direction: column;
-            padding-top: 44px;
+            margin-top: 44px;
         }
         &__info{
             color: color(grayscale,white);
@@ -76,6 +76,7 @@
 }
 @include mq-min(xl){
     .agreements{
+        padding-bottom: 30px;
         &__title-section{
             font-size: 48px;
             margin-top: 15px;
@@ -83,32 +84,46 @@
             width: 656px;
         }
         &__content{
+            align-items: center;
             display: flex;
             flex-direction: row-reverse;
-            align-items: center;
-            img{
-                margin-left: 260px;
-                height: 450px;
-                width: 450px;
-                padding-bottom: 50px;
-            }
+            justify-content: space-between;
+            padding-left: 185px;
+            padding-right: 185px;
+            width: 100%;
         }
+            img{
+                margin-top: 23px;
+                height: 450px;
+                margin-left: 378px;
+                width: 450px;
+            }
         &__info{
             display: flex;
             flex-direction: column;
-            margin-top: 30px;
-            text-align: left;
+            font-size: 36px;
+            margin-left: -92px;
+            margin-top: 34px;
             padding: 40px 0px;
+            text-align: left;
+            ul{
+                line-height: 44px;
+                margin-top: 36px;
+                margin-left: 12px;
+            }
         }
         &__topinfo{
-            font-size: 36px;
-            line-height: 40px;
+            line-height: 42px;
+            width: 485px;
         }
         &__link{
             display: flex;
-            font-size: 28px;
-            margin-top: 30px;
-            margin-left: 200px;
+            margin-left: 100px;
+            width: 100%;
+            
+            .btn-link{
+                font-size: 28px;
+            }
         }
     }
 }

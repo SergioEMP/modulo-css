@@ -1,5 +1,6 @@
 .banner{
     background: color(complementary,three); 
+    margin-top:91px;
     .container{
         align-items: center;
         display: flex;
@@ -33,6 +34,7 @@
         }
 @include mq-min(xl){
     .banner{
+        margin-top: 0;
         background: color(complementary,five);
         .container{
         display: flex;
@@ -52,13 +54,14 @@
                     display: block;
                     font-family: $font-header;
                     font-size: 98px;
-                    margin-left: 5px;
+                    margin-left: 10px;
                     margin-top: 25px;
                 }
                 img{
                     display: block;
                     height: auto;
                     margin-bottom: 50px;
+                    margin-top: 22px;
                     max-width: 100%;
                     width: auto;
                 }
@@ -74,7 +77,7 @@
                 color:color(grayscale,white);
                 font-size: 50px;
                 line-height: 57px;
-                padding-top:15px;
+                padding-top:20px;
                 text-align: center;
                 width: 341px;
                 }

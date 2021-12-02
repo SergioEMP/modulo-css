@@ -5,6 +5,7 @@
     flex-direction: row;
     height: fit-content;
     justify-content: center;
+    position: fixed;
     width: 100%;
     &__menu{
         &-navbar{
@@ -19,8 +20,8 @@
         justify-content: space-between;
         width: 100%;
         img{
-            margin-left: 1.5rem;
             height: 4rem;
+            margin-left: 1.5rem;
             width: 5rem;
         }
         &-title-header{
@@ -35,12 +36,12 @@
 }
 @include mq-min(lg){
     .header{
-        position: fixed;
         background-color: color(secondary,base);
         padding: 2rem;
         width: fit-content;
         align-items: center;
         position: absolute;
+        position: fixed;
         &__menu{
             &-navbar{
                 margin-left: 2rem;
@@ -64,6 +65,10 @@
 }
 @include mq-min(xl){
     .header{
-        position: fixed;
+        background-color: color(secondary,base);
+        padding: 2rem;
+        width: fit-content;
+        align-items: center;
+        position: absolute;
     }
 }

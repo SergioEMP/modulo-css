@@ -5,7 +5,6 @@
         flex-direction: column;
         font-family: $font-secondary; 
         font-size: 22px;
-
     }
         &__redes{
         align-items: center;
@@ -36,41 +35,40 @@
         }    
         
 }
-@include mq-min(lg){
+@include mq-min(xl){
     .footer{
-        height: 50px;
         .container{
-            width: 100%;
             display: flex;
             justify-content: space-between;
             flex-direction: row;
             align-items: center;
-            .footer__redes{
-                width: 250px;
-                margin: 0;
+            padding-left: 70px;
+            padding-right: 70px;
+            height: 205px;
+        }
+            &__redes{
+                font-size: 48px;
+                padding-top: 0px;
+                width: 180px;
                 img{
+                    height: 48px;
                     justify-content: center;  
-                    margin-left: 10px;
-                    margin-right: 10px;
+                    width: 48px;
                 }
             }
-            .footer__info{
-                margin: 50px;
+            &__info{
+                font-size: 24px;
                 text-align: center;
                 .direccion{
                     color: color(grayscale, gray-5);
                 }
             }
-        }
-    }
-}
-@include mq-min(xl){
-    .footer{
-        .container{
-            height: 100px;
-            .footer__redes{
-                width: 180px;
+            &__copyright{
+                font-size: 24px;
+                padding-bottom: 28px;
+                p{
+                margin-bottom: 0px;
+                }
             }
-        }
     }
 }
