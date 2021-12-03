@@ -13,7 +13,7 @@
     padding-top: 50px;
     width: 179px;
         &-icons{
-            font-size: 48px;
+            font-size: 35px;
         }
     }
     img{
@@ -21,7 +21,7 @@
         width: 35px;
     }
     &__info{
-        padding-top: 14px;
+        padding-top: 20px;
         text-align: center;
         .direction{
             color: color(grayscale, gray-5);
@@ -46,12 +46,22 @@
         }
         &__redes{
             font-size: 48px;
+            line-height: 20px;
             padding-top: 0px;
             width: 180px;
             img{
                 height: 48px;
                 justify-content: center;  
                 width: 48px;
+            }
+            &-icons{
+                font-size: 48px;
+            }
+            .icon-twitter{
+                color: color(complementary,eight);
+            }
+            .icon-facebook{
+                color: color(complementary,nine);
             }
         }
         &__info{

@@ -29,10 +29,13 @@
         &-title-header{
             color: color(grayscale, white);
             font-family: $font-header;
-            font-size: 42px;
+            font-size: 44px;
+            margin-top: 9px;
+            padding-left: 10px;
         }
         &-bar-icon{
-            font-size: 8rem; 
+            font-size: 7rem; 
+            padding-right: 8px;
         }
     }
 }
@@ -52,9 +55,7 @@
                 list-style: none;
                 margin-left: 2rem;
                 width: fit-content;
-                span{
-                    font-size: 6rem; 
-                }
+
                 &-icon{
                     font-size: 12rem;
                 }    
@@ -69,8 +70,34 @@
     .header{
         align-items: center;
         background-color: color(secondary,base);
-        padding: 2rem;
+        height: 660px;
+        padding: 1rem;
         position: absolute;
         width: fit-content;
+        &__menu{
+            &-navbar{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin-left: 0px;
+
+            }
+            &-icon{
+                color: color(grayscale,black);
+                font-size: 10rem;
+            }
+            &-list{
+                font-size: 5.2rem;
+                line-height: 101px;
+                padding-bottom: 26px;
+                padding-top: 19px;
+                .icon-chat{
+                    color: color(complementary,six);
+                }
+                .icon-email{
+                    color:color(complementary,seven);
+                }
+            }
+        }
     }
 }

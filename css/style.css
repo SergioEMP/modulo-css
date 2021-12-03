@@ -206,8 +206,8 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 
 @font-face {
   font-family: 'iconFont';
-  src: url("./../../fonts/iconFont.eot?ekiqni");
-  src: url("./../../fonts/iconFont.eot?ekiqni#iefix") format("embedded-opentype"), url("./../../fonts/iconFont.ttf?ekiqni") format("truetype"), url("./../../fonts/iconFont.woff?ekiqni") format("woff"), url("./../../fonts/iconFont.svg?ekiqni#icomoon") format("svg");
+  src: url("../fonts/iconFont/iconFont.eot?ekiqni");
+  src: url("../fonts/iconFont/iconFont.eot?ekiqni#iefix") format("embedded-opentype"), url("../fonts/iconFont/iconFont.ttf?ekiqni") format("truetype"), url("../fonts/iconFont/iconFont.woff?ekiqni") format("woff"), url("../fonts/iconFont/iconFont.svg?ekiqni#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -243,36 +243,13 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 /* line 37, ../scss/base/_icons.scss */
-.icon-home:before {
+.icon-swift:before {
   content: "\e903";
 }
 
 /* line 40, ../scss/base/_icons.scss */
-.icon-shop:before {
+.icon-twitter:before {
   content: "\e904";
-}
-
-/* line 43, ../scss/base/_icons.scss */
-.icon-swift:before {
-  content: "\e905";
-}
-
-/* line 46, ../scss/base/_icons.scss */
-.icon-twitter .path1:before {
-  content: "\e906";
-  color: #050000;
-}
-
-/* line 50, ../scss/base/_icons.scss */
-.icon-twitter .path2:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: white;
-}
-
-/* line 55, ../scss/base/_icons.scss */
-.icon-user:before {
-  content: "\e908";
 }
 
 /* line 1, ../scss/base/_grid.scss */
@@ -940,15 +917,18 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .header__bar-title-header {
   color: #ffffff;
   font-family: "Redressed", "cursive";
-  font-size: 42px;
+  font-size: 44px;
+  margin-top: 9px;
+  padding-left: 10px;
 }
-/* line 34, ../scss/components/_header.scss */
+/* line 36, ../scss/components/_header.scss */
 .header__bar-bar-icon {
-  font-size: 8rem;
+  font-size: 7rem;
+  padding-right: 8px;
 }
 
 @media (min-width: 960px) {
-  /* line 40, ../scss/components/_header.scss */
+  /* line 43, ../scss/components/_header.scss */
   .header {
     align-items: center;
     background-color: #E6E8FB;
@@ -957,7 +937,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     position: fixed;
     width: fit-content;
   }
-  /* line 48, ../scss/components/_header.scss */
+  /* line 51, ../scss/components/_header.scss */
   .header__menu-navbar {
     display: block;
     display: flex;
@@ -966,27 +946,51 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-left: 2rem;
     width: fit-content;
   }
-  /* line 55, ../scss/components/_header.scss */
-  .header__menu-navbar span {
-    font-size: 6rem;
-  }
-  /* line 58, ../scss/components/_header.scss */
+  /* line 59, ../scss/components/_header.scss */
   .header__menu-navbar-icon {
     font-size: 12rem;
   }
-  /* line 63, ../scss/components/_header.scss */
+  /* line 64, ../scss/components/_header.scss */
   .header__bar {
     display: none;
   }
 }
 @media (min-width: 1440px) {
-  /* line 69, ../scss/components/_header.scss */
+  /* line 70, ../scss/components/_header.scss */
   .header {
     align-items: center;
     background-color: #E6E8FB;
-    padding: 2rem;
+    height: 660px;
+    padding: 1rem;
     position: absolute;
     width: fit-content;
+  }
+  /* line 78, ../scss/components/_header.scss */
+  .header__menu-navbar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  /* line 85, ../scss/components/_header.scss */
+  .header__menu-icon {
+    color: #000000;
+    font-size: 10rem;
+  }
+  /* line 89, ../scss/components/_header.scss */
+  .header__menu-list {
+    font-size: 5.2rem;
+    line-height: 101px;
+    padding-bottom: 26px;
+    padding-top: 19px;
+  }
+  /* line 94, ../scss/components/_header.scss */
+  .header__menu-list .icon-chat {
+    color: #C51010;
+  }
+  /* line 97, ../scss/components/_header.scss */
+  .header__menu-list .icon-email {
+    color: #399256;
   }
 }
 /* line 2, ../scss/components/_footer.scss */
@@ -1007,7 +1011,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 15, ../scss/components/_footer.scss */
 .footer__redes-icons {
-  font-size: 48px;
+  font-size: 35px;
 }
 /* line 19, ../scss/components/_footer.scss */
 .footer img {
@@ -1016,7 +1020,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 23, ../scss/components/_footer.scss */
 .footer__info {
-  padding-top: 14px;
+  padding-top: 20px;
   text-align: center;
 }
 /* line 26, ../scss/components/_footer.scss */
@@ -1044,30 +1048,43 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   /* line 47, ../scss/components/_footer.scss */
   .footer__redes {
     font-size: 48px;
+    line-height: 20px;
     padding-top: 0px;
     width: 180px;
   }
-  /* line 51, ../scss/components/_footer.scss */
+  /* line 52, ../scss/components/_footer.scss */
   .footer__redes img {
     height: 48px;
     justify-content: center;
     width: 48px;
   }
   /* line 57, ../scss/components/_footer.scss */
+  .footer__redes-icons {
+    font-size: 48px;
+  }
+  /* line 60, ../scss/components/_footer.scss */
+  .footer__redes .icon-twitter {
+    color: #55ACEE;
+  }
+  /* line 63, ../scss/components/_footer.scss */
+  .footer__redes .icon-facebook {
+    color: #1877F2;
+  }
+  /* line 67, ../scss/components/_footer.scss */
   .footer__info {
     font-size: 24px;
     text-align: center;
   }
-  /* line 60, ../scss/components/_footer.scss */
+  /* line 70, ../scss/components/_footer.scss */
   .footer__info .direccion {
     color: #666666;
   }
-  /* line 64, ../scss/components/_footer.scss */
+  /* line 74, ../scss/components/_footer.scss */
   .footer__copyright {
     font-size: 24px;
     padding-bottom: 28px;
   }
-  /* line 67, ../scss/components/_footer.scss */
+  /* line 77, ../scss/components/_footer.scss */
   .footer__copyright p {
     margin-bottom: 0px;
   }
