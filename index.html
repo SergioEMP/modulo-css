@@ -10,49 +10,50 @@
     <title>VIP Tours</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="header__menu">
+    <header role="group" class="header">
+        <nav role="menubar" class="header__menu">
             <div class="header__menu-navbar">
-                <a href="#" class="brand">
-                    <span class="icon-swift header__menu-icon"></span>
+                <a role="button" href="#" class="brand">
+                    <span aria-label="Icono de la empresa" class="icon-swift header__menu-icon"></span>
                 </a>
+                
                 <ul class="header__menu-list">
                     <li>
-                        <a href="#">
-                            <img src="/images/home.png" width="52" height="52" alt="Icono de inicio">
+                        <a role="button" href="#">
+                            <img role="button" src="images/home.png" width="52" height="52" alt="Icono de inicio">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="/images/profile.png" width="52" height="52" alt="Icono de perfil">
+                        <a role="button" href="#">
+                            <img role="button" src="images/profile.png" width="52" height="52" alt="Icono de perfil">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="icon-chat"></span>
+                        <a role="button" href="#">
+                            <span aria-label="Icono de acceso al chat" class="icon-chat"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="icon-email"></span>
+                        <a role="button" href="#">
+                            <span aria-label="Icono de acceso a formulario de correo" class="icon-email"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="/images/shop.png" width="52" height="52" alt="Icono de tiendas">
+                        <a role="button" href="#">
+                            <img role="button" src="images/shop.png" width="52" height="52" alt="Icono de tiendas">
                         </a>
                     </li>
                 </ul>
             </div>    
         </nav>
         <div class="header__bar">
-            <img src="images/menu.svg" width="100" height="100" alt="Icono de menu">
+            <img role="button" src="images/menu.svg" width="100" height="100" alt="Icono de menu">
             <h1 class="header__bar-title-header">VIP TOURS</h1>
             <span class="icon-swift header__bar-bar-icon"></span>
         </div>
     </header>
     <main class="main">
-        <section class="banner">
+        <section role="banner" class="banner">
             <div class="container">
                 <div class="banner__part1">
                     <h1 class="banner__part1-title-page">VIP TOURS</h1>
@@ -63,11 +64,11 @@
                 </div>
                 <div class="banner__part2">
                     <h2 class="banner__part2-title-section">¡Registrate y obtén un 10% de descuento en tu primer vuelo!</h2>
-                    <button type="button" class="btn btn-secondary" name="Registro">Registrarme</button>
+                    <button role="link" type="button" class="btn btn-secondary" name="Registro">Registrarme</button>
                 </div>
             </div>
         </section> 
-        <section class="multimedia">
+        <section role="contentinfo" class="multimedia">
             <div class="container">
                 <h2 class="multimedia__title-section">Disfruta de los mejores hoteles a donde quiera que vayas</h2>
                 <div class="multimedia__content">
@@ -77,7 +78,7 @@
                             <source src="images/video.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <ul class="multimedia__list">
+                    <ul role="group" class="multimedia__list">
                         <li>Mónaco</li>
                         <li>París</li>
                         <li>Roma</li>
@@ -88,7 +89,7 @@
                 </div>
             </div>
         </section>    
-        <section class="card">
+        <section role="presentation" class="card">
             <div class="container">
                 <h2 class="card__title-section">Tenemos convenio con los aeropuertos de las ciudades más importantes del mundo</h2>
                     <div class="card__grid">
@@ -149,21 +150,21 @@
                     </div>
             </div>
         </section>
-        <section class="contact">
+        <section role="log" class="contact">
             <div class="container">
                 <div class="contact__left">
                     <h2 class="contact__title-section">Adquiere tu 10% de descuento</h2>
                     <form action="#">
                         <div class="contact__form-group">
                             <label for="name">Nombre</label>
-                            <input type="text" id="name" name="user-name" placeholder="Ingresa tu nombre">
+                            <input type="text" id="name" name="user-name" placeholder="Ingresa tu nombre" aria-required="true">
                             <label for="email">Correo Electrónico</label>
-                            <input type="email" id="mail" name="user-mail" placeholder="Ingresa tu correo">
+                            <input type="email" id="mail" name="user-mail" placeholder="Ingresa tu correo" aria-required="true">
                             <label for="telefono">Teléfono</label>
-                            <input type="number" id="telefono" name="user-tel" placeholder="Ingresa tu teléfono">
+                            <input type="number" id="telefono" name="user-tel" placeholder="Ingresa tu teléfono" aria-required="true">
                         </div>
                         <div class="contact__form-actions">
-                            <button type="submit" class="btn btn-primary">Envíar</button>
+                            <button role="link" type="submit" class="btn btn-primary">Envíar</button>
                         </div>
                     </form>
                 </div>
@@ -176,7 +177,7 @@
                 </aside>   
             </div> 
         </section>
-        <section class="agreements">
+        <section role="complementary" class="agreements">
             <div class="container">
                 <h2 class="agreements__title-section">¿Deseas ahorrar aún más?</h2>
                 <div class="agreements__content">
@@ -190,14 +191,14 @@
                                 Visita las cadenas de supermercados con las que tenemos convenio para que tu ahorro sea aún mayor:
                             </p>
                         </div>
-                        <ul>
+                        <ul role="group">
                             <li>Seven Eleven</li>
                             <li>Walmart</li>
                             <li>Carrefour</li>
                             <li>El corte ingles</li>
                         </ul>
                         <div class="agreements__link">
-                            <a href="" class="btn-link">Ver más</a>
+                            <a role="button" href="#" class="btn-link">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -205,21 +206,21 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer role="group" class="footer">
         <div class="container">
             <nav class="footer__redes">
-                <a href="#" target="blank" rel="nofollow noopener">
-                    <span class="icon-twitter footer__redes-icons"></span>
+                <a role="button" href="#" target="blank" rel="nofollow noopener">
+                    <span aria-label="Enlace a Twitter" class="icon-twitter footer__redes-icons"></span>
                 </a>
-                <a href="#" target="blank" rel="nofollow noopener">
-                    <span class="icon-facebook footer__redes-icons"></span>
+                <a role="button" href="#" target="blank" rel="nofollow noopener">
+                    <span aria-label="Enlace a Facebook" class="icon-facebook footer__redes-icons"></span>
                 </a>
-                <a href="#" target="blank" rel="nofollow noopener">
+                <a role="button" href="#" target="blank" rel="nofollow noopener">
                     <img src="images/instagram.png" width="35" height="35" alt="Icono instagram">
                 </a>
             </nav>
             <div class="footer__info">
-                <p>Escríbenos: <a href="viptours@aviacion.com" class="correo">viptours@aviacion.com</a></p>
+                <p>Escríbenos: <a role="button" href="viptours@aviacion.com" class="correo">viptours@aviacion.com</a></p>
                 <p class="direction">7191 Deckow TrafficwayNew - Vallieville</p>
             </div>
             <div class="footer__copyright">

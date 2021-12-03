@@ -258,7 +258,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 /* line 46, ../scss/base/_icons.scss */
-.icon-twitter:before {
+.icon-twitter .path1:before {
   content: "\e906";
   color: #050000;
 }
@@ -1375,6 +1375,11 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-bottom: -22px;
     padding-top: 28px;
     width: 450px;
+  }
+  /* line 100, ../scss/components/_card.scss */
+  .card__description p {
+    margin-left: 45px;
+    width: 350px;
   }
 }
 /* line 2, ../scss/components/_contact.scss */
