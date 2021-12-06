@@ -1125,39 +1125,39 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 @media (min-width: 960px) {
-  /* line 33, ../scss/components/_multimedia.scss */
+  /* line 31, ../scss/components/_multimedia.scss */
   .multimedia__title-section {
     width: 600px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 39, ../scss/components/_multimedia.scss */
+  /* line 37, ../scss/components/_multimedia.scss */
   .multimedia {
     padding-bottom: 44px;
   }
-  /* line 41, ../scss/components/_multimedia.scss */
+  /* line 39, ../scss/components/_multimedia.scss */
   .multimedia__title-section {
     font-size: 48px;
     line-height: 40px;
     margin-top: 30px;
     width: 832px;
   }
-  /* line 47, ../scss/components/_multimedia.scss */
+  /* line 45, ../scss/components/_multimedia.scss */
   .multimedia__content {
     display: flex;
     flex-direction: row;
     margin-left: -25px;
     padding-top: 108px;
   }
-  /* line 53, ../scss/components/_multimedia.scss */
+  /* line 51, ../scss/components/_multimedia.scss */
   .multimedia__media {
     width: 738px;
   }
-  /* line 56, ../scss/components/_multimedia.scss */
+  /* line 53, ../scss/components/_multimedia.scss */
   .multimedia__media video {
     max-width: 100%;
   }
-  /* line 61, ../scss/components/_multimedia.scss */
+  /* line 57, ../scss/components/_multimedia.scss */
   .multimedia__list {
     display: block;
     list-style: disc;
@@ -1205,24 +1205,20 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 314px;
 }
-/* line 30, ../scss/components/_banner.scss */
-.banner__part2 button {
-  padding-bottom: 20px;
-}
 
 @media (min-width: 1440px) {
-  /* line 36, ../scss/components/_banner.scss */
+  /* line 33, ../scss/components/_banner.scss */
   .banner {
     background: #324AA0;
     margin-top: 0;
   }
-  /* line 39, ../scss/components/_banner.scss */
+  /* line 36, ../scss/components/_banner.scss */
   .banner .container {
     align-items: center;
     display: flex;
     flex-direction: row;
   }
-  /* line 44, ../scss/components/_banner.scss */
+  /* line 41, ../scss/components/_banner.scss */
   .banner__part1 {
     align-items: center;
     display: flex;
@@ -1231,7 +1227,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-top: 30px;
     text-align: center;
   }
-  /* line 51, ../scss/components/_banner.scss */
+  /* line 48, ../scss/components/_banner.scss */
   .banner__part1-title-page {
     color: #ffffff;
     display: block;
@@ -1240,7 +1236,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-left: 10px;
     margin-top: 25px;
   }
-  /* line 59, ../scss/components/_banner.scss */
+  /* line 56, ../scss/components/_banner.scss */
   .banner__part1 img {
     display: block;
     height: auto;
@@ -1249,7 +1245,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     max-width: 100%;
     width: auto;
   }
-  /* line 68, ../scss/components/_banner.scss */
+  /* line 65, ../scss/components/_banner.scss */
   .banner__part2 {
     align-items: center;
     display: flex;
@@ -1257,7 +1253,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-left: 194px;
     margin-top: 14px;
   }
-  /* line 75, ../scss/components/_banner.scss */
+  /* line 71, ../scss/components/_banner.scss */
   .banner__part2-title-section {
     color: #ffffff;
     font-size: 50px;
@@ -1266,7 +1262,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 341px;
   }
-  /* line 83, ../scss/components/_banner.scss */
+  /* line 79, ../scss/components/_banner.scss */
   .banner__part2 button {
     font-size: 36px;
     height: 77px;
@@ -1311,7 +1307,11 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   max-width: 100%;
   width: auto;
 }
-/* line 31, ../scss/components/_card.scss */
+/* line 29, ../scss/components/_card.scss */
+.card__galeria picture img {
+  object-fit: cover;
+}
+/* line 34, ../scss/components/_card.scss */
 .card__description {
   color: #ffffff;
   font-family: "Rufina", serif;
@@ -1321,43 +1321,43 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 314px;
 }
-/* line 39, ../scss/components/_card.scss */
+/* line 42, ../scss/components/_card.scss */
 .card__description p {
   margin-bottom: 0;
 }
 
 @media (min-width: 960px) {
-  /* line 46, ../scss/components/_card.scss */
+  /* line 49, ../scss/components/_card.scss */
   .card .container {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  /* line 50, ../scss/components/_card.scss */
+  /* line 53, ../scss/components/_card.scss */
   .card .container .title-section {
     width: 800px;
   }
-  /* line 54, ../scss/components/_card.scss */
+  /* line 56, ../scss/components/_card.scss */
   .card .container__galeria {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  /* line 58, ../scss/components/_card.scss */
+  /* line 60, ../scss/components/_card.scss */
   .card .container__galeria.only-ipad {
     display: flex;
   }
-  /* line 61, ../scss/components/_card.scss */
+  /* line 63, ../scss/components/_card.scss */
   .card .container__galeria .cities__description {
     width: 500px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 69, ../scss/components/_card.scss */
+  /* line 71, ../scss/components/_card.scss */
   .card {
     padding-bottom: 53px;
   }
-  /* line 71, ../scss/components/_card.scss */
+  /* line 73, ../scss/components/_card.scss */
   .card__title-section {
     font-size: 48px;
     margin-top: 39px;
@@ -1365,35 +1365,35 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 1070px;
   }
-  /* line 78, ../scss/components/_card.scss */
+  /* line 80, ../scss/components/_card.scss */
   .card__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 515px);
   }
-  /* line 83, ../scss/components/_card.scss */
+  /* line 85, ../scss/components/_card.scss */
   .card__galeria {
     align-items: center;
     display: flex;
     flex-direction: columnx;
   }
-  /* line 87, ../scss/components/_card.scss */
+  /* line 89, ../scss/components/_card.scss */
   .card__galeria.only-desktop {
     display: flex;
   }
-  /* line 90, ../scss/components/_card.scss */
+  /* line 92, ../scss/components/_card.scss */
   .card__galeria img {
     height: 350px;
     margin-top: 23px;
     width: 350px;
   }
-  /* line 96, ../scss/components/_card.scss */
+  /* line 98, ../scss/components/_card.scss */
   .card__description {
     margin-bottom: -22px;
     padding-top: 28px;
     width: 450px;
   }
-  /* line 100, ../scss/components/_card.scss */
+  /* line 102, ../scss/components/_card.scss */
   .card__description p {
     margin-left: 45px;
     width: 350px;
