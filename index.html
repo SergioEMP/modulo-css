@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="icon" href="images/logo.png" type="image/png">
-    <link rel="preload" as="image" href="images/illustracion-0.png" decoding="async"> 
+    <link rel="preload" as="image" href="images/illustracion-0.png" decoding="async">
+    <link rel="stylesheet" href="./aos/dist/aos.css" type="text/css">
     <title>VIP Tours</title>
 </head>
 <body>
@@ -57,7 +58,7 @@
             <div class="container">
                 <div class="banner__part1">
                     <h1 class="banner__part1-title-page">VIP TOURS</h1>
-                    <picture>
+                    <picture data-aos="flip-up" data-aos-duration="1000">
                         <source srcset="images/illustracion-0.webp" type="image/webp">
                         <img src="images/illustracion-0.png" width="279" height="386" alt="Ilustracion de viajes">
                     </picture>
@@ -72,7 +73,7 @@
             <div class="container">
                 <h2 class="multimedia__title-section">Disfruta de los mejores hoteles a donde quiera que vayas</h2>
                 <div class="multimedia__content">
-                    <div class="multimedia__media">
+                    <div class="multimedia__media" data-aos="zoom-in" data-aos-duration="1500">
                         <video width="314" height="199" class="multimedia__media-video" preload="none" muted poster="images/poster.png" controls>
                             <source src="images/video.webp" type="video/webm">
                             <source src="images/video.mp4" type="video/mp4">
@@ -93,7 +94,7 @@
             <div class="container">
                 <h2 class="card__title-section">Tenemos convenio con los aeropuertos de las ciudades más importantes del mundo</h2>
                     <div class="card__grid">
-                        <div class="card__galeria">
+                        <div class="card__galeria" data-aos="flip-left" data-aos-duration="2000">
                             <picture>
                                 <source srcset="images/1.webp" type="images/webp">
                                 <img src="images/1.jpg" width="314" height="300" alt="Imagen de Paris">
@@ -102,7 +103,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ultricies luctus arcu.</p>
                             </div>
                         </div>
-                        <div class="card__galeria">
+                        <div class="card__galeria" data-aos="flip-left" data-aos-duration="2000">
                             <picture>
                                 <source srcset="images/2.webp" type="image/webp">
                                 <img src="images/2.jpg" width="314" height="300" alt="Imagen de Roma">
@@ -111,7 +112,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis ultricies luctus arcu.</p>
                             </div>
                         </div>
-                        <div class="card__galeria only-ipad only-desktop">
+                        <div class="card__galeria only-ipad only-desktop" data-aos="flip-left" data-aos-duration="2000">
                             <picture>
                                 <source srcset="images/3.webp" type="image/webp">
                                 <img src="images/3.jpg" width="350" height="350" alt="Imagen de TTokio">
@@ -120,7 +121,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
                             </div>
                         </div>  
-                        <div class="card__galeria only-desktop">
+                        <div class="card__galeria only-desktop" data-aos="flip-right" data-aos-duration="2000">
                             <picture>
                                 <source srcset="images/4.webp" type="image/webp">
                                 <img src="images/4.jpg" width="350" height="350" alt="Imagen de Nueva York">
@@ -129,7 +130,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
                             </div>
                         </div>
-                        <div class="card__galeria only-desktop">
+                        <div class="card__galeria only-desktop" data-aos="flip-right" data-aos-duration="2000">
                             <picture>
                                 <source srcset="images/5.webp" type="image/webp">
                                 <img src="images/5.jpg" width="350" height="350" alt="Imagen de Sidney">
@@ -138,7 +139,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu non sit aliquet.</p>
                             </div>
                         </div>
-                        <div class="card__galeria only-desktop">
+                        <div class="card__galeria only-desktop" data-aos="flip-right" data-aos-duration="2000">
                             <picture>
                                 <source srcset="images/6.webp" type="image/webp">
                                 <img src="images/6.jpg" width="350" height="350" alt="Imagen de Monterrey">
@@ -170,7 +171,7 @@
                 </div>
                 <aside role="search">
                     <h3 class="subtitle-section">Revisa aqui los requisitos para viajar a diferentes paises</h3>
-                    <picture>
+                    <picture data-aos="zoom-out" data-aos-duration="500">
                         <source srcset="images/illustration-1.webp" type="image/webp">
                         <img src="images/illustration-1.png" width="410" height="320" alt="Ilustracion requisitos de viaje">
                     </picture>
@@ -181,7 +182,7 @@
             <div class="container">
                 <h2 class="agreements__title-section">¿Deseas ahorrar aún más?</h2>
                 <div class="agreements__content">
-                    <picture>
+                    <picture data-aos="fade-up" data-aos-duration="3000">
                         <source srcset="images/illustration-2.webp" type="image/webp">
                         <img src="images/illustration-2.png" width="314" height="314" alt="Ilustracion tiendas con convenio">
                     </picture>
@@ -228,5 +229,11 @@
             </div>
         </div>
     </footer>
+   
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
